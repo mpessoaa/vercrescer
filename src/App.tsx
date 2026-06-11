@@ -39,6 +39,18 @@ import acom3 from './assets/images/acom3.jpg';
 import acom4 from './assets/images/acom4.jpg';
 import acom5 from './assets/images/acom5.jpg';
 
+import equipe1 from './assets/images/equipe1.png';
+import equipe2 from './assets/images/equipe2.png';
+import equipe3 from './assets/images/equipe3.png';
+import equipe4 from './assets/images/equipe4.png';
+import equipe5 from './assets/images/equipe5.png';
+
+import parto1 from './assets/images/parto1.png'; // Se for PNG, lembre de mudar aqui para .png!
+import parto2 from './assets/images/parto2.png';
+import parto3 from './assets/images/parto3.png';
+import parto4 from './assets/images/parto4.png';
+import parto5 from './assets/images/parto5.png';
+
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -144,12 +156,11 @@ Quer saber mais? Entre em contato conosco e eternize o dia mais lindo de sua vid
         { q: "Qual a forma de pagamento?", a: "Via Pix ou parcelamento no cartão de crédito em até 12x." }
       ],
       images: [
-        "https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&q=80&w=1000",
-        "https://images.unsplash.com/photo-1551250939-234a94c65e97?auto=format&fit=crop&q=80&w=1000",
-        "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&q=80&w=1000",
-        "https://images.unsplash.com/photo-1559734840-f9509ee5677f?auto=format&fit=crop&q=80&w=1000",
-        "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=1000",
-        "https://images.unsplash.com/photo-1584447128309-b66b7a4d1b63?auto=format&fit=crop&q=80&w=1000"
+        parto1,
+        parto2,
+        parto3,
+        parto4,
+        parto5
       ]
     },
     {
@@ -794,27 +805,25 @@ Quer saber mais? Entre em contato conosco e eternize o dia mais lindo de sua vid
             >
               <div className="space-y-4 pt-12">
                 <div className="aspect-[3/4] rounded-3xl overflow-hidden glass border-stone-200">
-                  <img src="https://images.unsplash.com/photo-1544126592-807daa2b565b?auto=format&fit=crop&q=80&w=800" referrerPolicy="no-referrer" className="w-full h-full object-cover hover:scale-105 transition-all duration-700" alt="Newborn photography detail" />
+                  <img src={equipe1} referrerPolicy="no-referrer" className="w-full h-full object-cover hover:scale-105 transition-all duration-700" alt="Nanda e Thamiris" />
                 </div>
                 <div className="aspect-square rounded-3xl overflow-hidden glass border-stone-200">
-                   <img src="https://images.unsplash.com/photo-1559734840-f9509ee5677f?auto=format&fit=crop&q=80&w=800" referrerPolicy="no-referrer" className="w-full h-full object-cover hover:scale-105 transition-all duration-700" alt="Happy family" />
+                   <img src={equipe2} referrerPolicy="no-referrer" className="w-full h-full object-cover hover:scale-105 transition-all duration-700" alt="Nanda e Thamiris" />
                 </div>
               </div>
               <div className="space-y-4">
                 <div className="aspect-square rounded-3xl overflow-hidden glass border-stone-200">
-                  <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&q=80&w=800" referrerPolicy="no-referrer" className="w-full h-full object-cover hover:scale-105 transition-all duration-700" alt="Photography studio" />
+                  <img src={equipe3} referrerPolicy="no-referrer" className="w-full h-full object-cover hover:scale-105 transition-all duration-700" alt="Nanda e Thamiris" />
                 </div>
                 <div className="aspect-[3/4] rounded-3xl overflow-hidden glass border-stone-200 shadow-2xl">
-                   <img src="https://images.unsplash.com/photo-1520206151081-309bd8933b9f?auto=format&fit=crop&q=80&w=800" referrerPolicy="no-referrer" className="w-full h-full object-cover hover:scale-110 transition-all duration-700" alt="Beautiful pregnancy" />
+                   <img src={equipe4} referrerPolicy="no-referrer" className="w-full h-full object-cover hover:scale-110 transition-all duration-700" alt="Nanda e Thamiris" />
                 </div>
               </div>
               <div className="hidden md:block space-y-4 pt-8">
                 <div className="aspect-[3/4] rounded-3xl overflow-hidden glass border-stone-200">
-                  <img src="https://images.unsplash.com/photo-1551250939-234a94c65e97?auto=format&fit=crop&q=80&w=800" referrerPolicy="no-referrer" className="w-full h-full object-cover hover:scale-105 transition-all duration-700" alt="Newborn detail" />
+                  <img src={equipe5} referrerPolicy="no-referrer" className="w-full h-full object-cover hover:scale-105 transition-all duration-700" alt="Nanda e Thamiris" />
                 </div>
-                <div className="aspect-square rounded-3xl overflow-hidden glass border-stone-200">
-                   <img src="https://images.unsplash.com/photo-1543332164-6e82f355bab1?auto=format&fit=crop&q=80&w=800" referrerPolicy="no-referrer" className="w-full h-full object-cover hover:scale-105 transition-all duration-700" alt="Sweet moment" />
-                </div>
+                
               </div>
             </motion.div>
           </div>
