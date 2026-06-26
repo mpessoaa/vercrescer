@@ -51,6 +51,22 @@ import parto3 from './assets/images/parto3.png';
 import parto4 from './assets/images/parto4.png';
 import parto5 from './assets/images/parto5.png';
 
+import cake1 from './assets/images/cake1.jpeg';
+import cake2 from './assets/images/cake2.jpeg';
+import cake3 from './assets/images/cake3.jpeg';
+import cake4 from './assets/images/cake4.jpeg';
+import cake5 from './assets/images/cake5.jpeg';
+import cake6 from './assets/images/cake6.jpeg';
+
+import eventos1 from './assets/images/eventos1.png'; // Se for PNG, lembre de mudar aqui para .png!
+import eventos2 from './assets/images/eventos2.png';
+import eventos3 from './assets/images/eventos3.png';
+import eventos4 from './assets/images/eventos4.png';
+import eventos5 from './assets/images/eventos5.png';
+
+import fotoFernanda from './assets/images/fernanda.png';
+import fotoTamires from './assets/images/tamires.png';
+
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -99,6 +115,7 @@ export default function App() {
         { name: "A Experiência Completa", details: ["Todas as fotos (+60 média)", "Álbum fotolivro 20x20 premium", "Até 2 locações", "4 trocas de looks", "2h de ensaio"] }
       ],
       // Gestante 5 removida daqui
+      destaque: fotoFernanda,
       images: [
         gestante1,
         gestante2,
@@ -155,6 +172,7 @@ Quer saber mais? Entre em contato conosco e eternize o dia mais lindo de sua vid
         { q: "Há mais algum valor além do pacote?", a: "A taxa de maternidade não está inclusa nos pacotes e é cobrada somente em maternidades da UNIMED." },
         { q: "Qual a forma de pagamento?", a: "Via Pix ou parcelamento no cartão de crédito em até 12x." }
       ],
+      destaque: fotoTamires,
       images: [
         parto1,
         parto2,
@@ -263,12 +281,12 @@ Quer saber mais? Entre em contato conosco e eternize o dia mais lindo de sua vid
         { q: "O que levar no dia?", a: "Roupinha para as fotos, toalha e uma troca de roupa extra para o bebê." }
       ],
       images: [
-        "https://images.unsplash.com/photo-1519214605650-76a613ee3245?auto=format&fit=crop&q=80&w=1000",
-        "https://images.unsplash.com/photo-1530103043960-ef38714abb15?auto=format&fit=crop&q=80&w=1000",
-        "https://images.unsplash.com/photo-1543362151-37cd8878b273?auto=format&fit=crop&q=80&w=1000",
-        "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&q=80&w=1000",
-        "https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&q=80&w=1000",
-        "https://images.unsplash.com/photo-1559734840-f9509ee5677f?auto=format&fit=crop&q=80&w=1000"
+        cake1,
+        cake2,
+        cake3,
+        cake4,
+        cake5,
+        cake6
       ]
     },
     { 
@@ -321,10 +339,11 @@ Quer saber mais? Entre em contato conosco e eternize o dia mais lindo de sua vid
         { q: "Como funciona o pagamento?", a: "O valor da proposta deverá ser quitado até 1 dia antes do evento." }
       ],
       images: [
-        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=1000",
-        "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=1000",
-        "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=1000",
-        "https://images.unsplash.com/photo-1519222970733-f746152ee63b?auto=format&fit=crop&q=80&w=1000"
+        eventos1,
+        eventos2,
+        eventos3,
+        eventos4,
+        eventos5
       ]
     },
     { 
@@ -346,10 +365,7 @@ Quer saber mais? Entre em contato conosco e eternize o dia mais lindo de sua vid
         { name: "Externo", details: ["10 fotos digitais", "Até 2h de ensaio", "Local de sua escolha ou espaço profissional", "Verificar cidades atendidas"] }
       ],
       images: [
-        "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=1000",
-        "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1000",
-        "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=1000",
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000"
+        
       ]
     },
     { 
@@ -400,10 +416,7 @@ Quer saber mais? Entre em contato conosco e eternize o dia mais lindo de sua vid
         { q: "Precisa levar iluminação?", a: "Não, iluminação Godox profissional já está inclusa no valor da locação." }
       ],
       images: [
-        "https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&q=80&w=1000",
-        "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1000",
-        "https://images.unsplash.com/photo-1559734840-f9509ee5677f?auto=format&fit=crop&q=80&w=1000",
-        "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1000"
+        
       ]
     }
   ];
@@ -465,15 +478,20 @@ Quer saber mais? Entre em contato conosco e eternize o dia mais lindo de sua vid
                 </div>
 
                 {activeService.about && (
-                  <div className="mb-20 grid md:grid-cols-2 gap-12 items-center p-10 bg-emerald-50/50 rounded-[50px]">
-                    <div className="aspect-square rounded-[40px] overflow-hidden">
-                      <img src={activeService.images[0]} referrerPolicy="no-referrer" className="w-full h-full object-cover" alt={activeService.about.title} />
-                    </div>
+                  <div className={`mb-20 grid ${activeService.images && activeService.images.length > 0 ? 'md:grid-cols-2' : 'grid-cols-1'} gap-12 items-center p-10 bg-emerald-50/50 rounded-[50px]`}>
+                    
+                    {/* Só mostra o quadrado se houver pelo menos 1 imagem na lista */}
+                    {activeService.images && activeService.images.length > 0 && (
+                      <div className="aspect-square rounded-[40px] overflow-hidden">
+                        <img src={activeService.destaque || activeService.images[0]} referrerPolicy="no-referrer" className="w-full h-full object-cover" alt={activeService.about.title} />
+                      </div>
+                    )}
+
                     <div className="space-y-6">
                       <h3 className="text-3xl font-serif">{activeService.about.title}</h3>
                       <p className="opacity-60 leading-relaxed font-light whitespace-pre-line">{activeService.about.text}</p>
                       {activeService.highlights && (
-                        <div className="flex gap-4">
+                        <div className="flex flex-wrap gap-4">
                           {activeService.highlights.map((h: string, idx: number) => (
                             <span key={idx} className="text-[10px] font-bold uppercase tracking-widest px-3 py-2 bg-white rounded-full border border-stone-200">
                               {h}
@@ -871,9 +889,9 @@ Quer saber mais? Entre em contato conosco e eternize o dia mais lindo de sua vid
           
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { name: "Mariana Silva", role: "Mãe do Theo", text: "A experiência foi mágica. As fotos do meu parto ficaram emocionantes e com uma sensibilidade indescritível." },
-              { name: "Rodrigo Costa", role: "Empreendedor", text: "Minha presença no Instagram mudou completamente após o ensaio corporativo. Profissionalismo puro!" },
-              { name: "Ana Paula", role: "Gestante", text: "Fiquei super à vontade no estúdio. O atendimento é primoroso e o espaço é lindo demais." }
+              { name: "Raquel", role: "", text: "Nossa experiência com a Ver Crescer tem sido especial desde os primeiros meses da Analua. Cada mesversário e ensaio foi marcado por fotinhos muito lindas e do jeitinho que sempre sonhamos, com um cenário mais clean, a nossa cara. Sempre nos sentimos acolhidos pela equipe, que tem uma sensibilidade incrível para lidar com os bebês e transformar cada fase em uma lembrança única. Muito obrigada sempre por toda atenção com a nossa família." },
+              { name: "Fernanda", role: "", text: "Aproveitando o oportunidade, queria te agradecer mais uma vez por tudo, cada palavra, cada massagem, cada conselho, você estava ali com a gente 1000%, se doou totalmente pra viver aquele momento… você foi além do profissional, super humana, atenciosa, preocupada o tempo todo com a gente, com nosso bem estar, foi muito além da fotografia! Que Deus abençoe sempre sua vida, você é maravilhosaaaaaaaa, e vou eternamente grata" },
+              { name: "Bianca", role: "", text: "Antes de fazer meu primeiro ensaio, eu achava que era só sobre ter fotos bonitas. Hoje, vejo que é sobre guardar fases da vida que nunca mais voltam… Depois que tive minhas filhas, isso fez ainda mais sentido para mim, o parto foi um dos dias mais marcantes da minha vida e, no meio de tantas emoções, existem detalhes que a gente acaba nem conseguindo absorver e poder olhar as fotos/videos e reviver aquele momento é algo que eu nunca imaginei que teria tanto valor. Lembro até hoje do meu nervosismo naquela madrugada do parto e foi a primeira vez que eu vi a Thami, nem se conhecíamos e ela foi a pessoa mais importante naquele momento, que esteve comigo todo tempo e me acalmou até mais que o médico e enfermeiras kkkk, nunca vou esquecer disso e de tudo oq ela fez por nós. Existem momentos que passam em questão de horas mas mudam a nossa vida pra sempre, ter tudo registrado me permite reviver cada detalhe que eu jamais conseguiria lembrar com a mesma intensidade… Sem contar que hoje posso mostrar todos os registros pras minhas filhas que ficam encantadas vendo elas nascendo, nos ensaios bebezinhas, aniversários… a Ver Crescer faz parte da nossa vida, dos momentos mais lindos e inesquecíveis que já vivemos, sou muuito grata por isso! confesso que fico ansiosa pra engravidar novamente e poder reviver todos esses registros com vocês. Vocês já são nossa família e eu jamais trocaria o trabalho impecável de vocês que sempre me entregaram além e com tanta excelência, quero que acompanhem todas as fases porque esses momentos passam muito rápido mas essas memórias registradas ficam pra sempre!" }
             ].map((dep, i) => (
               <div key={i} className="bg-emerald-50/30 p-10 rounded-[32px] border border-emerald-900/5 relative shadow-sm">
                 <div className="flex gap-1 text-emerald-600 mb-6">
@@ -923,7 +941,7 @@ Quer saber mais? Entre em contato conosco e eternize o dia mais lindo de sua vid
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12 text-center md:text-left text-stone-900">
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-4 justify-center md:justify-start group cursor-pointer">
-              <div className="h-16 w-auto min-w-[180px] rounded-lg overflow-hidden bg-white/40 flex items-center justify-center p-2 transition-transform group-hover:scale-105">
+              <div className="h-16 w-auto min-w-[180px] rounded-xl overflow-hidden transition-all group-hover:scale-105 flex items-center justify-center p-2 bg-white/40 backdrop-blur-sm">
                 <img 
                   src="/logo.png" 
                   alt="Logo" 
