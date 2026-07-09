@@ -458,7 +458,7 @@ export default function App() {
                    <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-[20px] sm:rounded-[32px] bg-emerald-900 text-white flex items-center justify-center shrink-0">
                      {activeService.icon}
                    </div>
-                   <div className="space-y-3 sm:space-y-4 w-full">
+                   <div className="space-y-3 sm:space-y-4 w-full min-w-0">
                      <div className="inline-block px-3 py-1 rounded-full bg-emerald-50 text-[10px] font-bold tracking-widest uppercase text-emerald-700">
                         Serviço Especializado
                      </div>
@@ -475,7 +475,7 @@ export default function App() {
                 <div className={`mb-12 md:mb-20 grid ${activeService.images && activeService.images.length > 0 ? 'lg:grid-cols-2' : 'grid-cols-1'} gap-8 lg:gap-16 items-start w-full`}>
                   
                   {/* Coluna 1: Textos, Pacotes e Info */}
-                  <div className="space-y-10 sm:space-y-12 order-2 lg:order-1 w-full">
+                  <div className="space-y-10 sm:space-y-12 order-2 lg:order-1 w-full min-w-0">
                     
                     {/* Sobre */}
                     {activeService.about && (
@@ -551,7 +551,7 @@ export default function App() {
 
                   {/* Coluna 2: Carrossel */}
                   {activeService.images && activeService.images.length > 0 && (
-                    <div className="lg:sticky top-8 space-y-4 order-1 lg:order-2 w-full">
+                    <div className="lg:sticky top-8 space-y-4 order-1 lg:order-2 w-full min-w-0">
                       <div className="relative rounded-[24px] sm:rounded-[40px] overflow-hidden bg-stone-100 aspect-[4/5] shadow-xl w-full">
                         <AnimatePresence mode="wait">
                           <motion.img
