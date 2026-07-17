@@ -492,7 +492,11 @@ export default function App() {
   ];
 
   return (
+<<<<<<< HEAD
     <div className="min-h-screen selection:bg-emerald-100 selection:text-emerald-900 bg-[#f9fbf9] text-stone-900 leading-relaxed font-sans overflow-x-hidden">
+=======
+    <div className="min-h-screen selection:bg-emerald-100 selection:text-emerald-900 bg-[#f9fbf9] text-stone-900 leading-relaxed font-sans overflow-x-hidden w-full">
+>>>>>>> 5a11010a035facbbe914e7884f58b05ab53a4740
       <div className="fixed inset-0 overflow-hidden pointer-events-none -z-10">
         <div className="absolute top-[-10%] left-[-5%] w-[50%] h-[50%] bg-emerald-100/30 rounded-full blur-[120px]" />
         <div className="absolute top-[30%] right-[-10%] w-[40%] h-[40%] bg-white rounded-full blur-[100px]" />
@@ -519,17 +523,26 @@ export default function App() {
               animate={{ y: 0, opacity: 1, scale: 1 }}
               exit={{ y: 100, opacity: 0, scale: 0.95 }}
               transition={{ type: "spring", damping: 25, stiffness: 200 }}
+<<<<<<< HEAD
               className="relative w-full max-w-7xl h-full bg-white rounded-[28px] sm:rounded-[40px] shadow-2xl overflow-y-auto"
+=======
+              className="relative w-full max-w-7xl h-auto max-h-[92vh] md:max-h-[95vh] bg-white rounded-[24px] sm:rounded-[40px] shadow-2xl overflow-y-auto overflow-x-hidden scroll-smooth"
+>>>>>>> 5a11010a035facbbe914e7884f58b05ab53a4740
             >
               <div className="p-5 sm:p-8 md:p-16">
                 <button 
                   onClick={() => setActiveService(null)}
+<<<<<<< HEAD
                   className="absolute top-4 right-4 md:top-8 md:right-8 w-10 h-10 md:w-12 md:h-12 rounded-full bg-stone-100 flex items-center justify-center hover:bg-emerald-100 transition-colors z-10"
+=======
+                  className="absolute top-4 right-4 md:top-8 md:right-8 w-10 h-10 md:w-12 md:h-12 rounded-full bg-stone-100 flex items-center justify-center hover:bg-emerald-100 transition-colors z-10 shadow-sm"
+>>>>>>> 5a11010a035facbbe914e7884f58b05ab53a4740
                 >
                   <X className="text-stone-900 w-5 h-5 md:w-6 md:h-6" />
                 </button>
 
                 {/* Cabeçalho do Modal */}
+<<<<<<< HEAD
                 <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-start mb-10 md:mb-16 pr-10 md:pr-0">
                    <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-[24px] sm:rounded-[32px] bg-emerald-900 text-white flex items-center justify-center shrink-0">
                      {activeService.icon}
@@ -543,11 +556,27 @@ export default function App() {
                        <p className="text-base sm:text-xl md:text-2xl font-serif text-stone-900 italic opacity-80 max-w-3xl">{activeService.hero.headline} {activeService.hero.subheadline}</p>
                      ) : (
                        <p className="opacity-50 font-light max-w-lg leading-relaxed text-sm sm:text-base">{activeService.desc}</p>
+=======
+                <div className="flex flex-col md:flex-row gap-5 md:gap-10 items-start mb-8 md:mb-16 pr-12 md:pr-0 w-full">
+                   <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-[20px] sm:rounded-[32px] bg-emerald-900 text-white flex items-center justify-center shrink-0">
+                     {activeService.icon}
+                   </div>
+                   <div className="space-y-3 sm:space-y-4 w-full min-w-0">
+                     <div className="inline-block px-3 py-1 rounded-full bg-emerald-50 text-[10px] font-bold tracking-widest uppercase text-emerald-700">
+                        Serviço Especializado
+                     </div>
+                     <h2 className="text-3xl sm:text-5xl md:text-7xl font-serif tracking-tighter leading-tight break-words w-full">{activeService.title}</h2>
+                     {activeService.hero ? (
+                       <p className="text-base sm:text-xl md:text-2xl font-serif text-stone-900 italic opacity-80 max-w-3xl leading-snug break-words w-full">{activeService.hero.headline} {activeService.hero.subheadline}</p>
+                     ) : (
+                       <p className="opacity-50 font-light max-w-lg leading-relaxed text-sm sm:text-base break-words w-full">{activeService.desc}</p>
+>>>>>>> 5a11010a035facbbe914e7884f58b05ab53a4740
                      )}
                    </div>
                 </div>
 
                 {/* Área Principal: Informações na esquerda, Carrossel na direita */}
+<<<<<<< HEAD
                 <div className={`mb-12 md:mb-20 grid ${activeService.images && activeService.images.length > 0 ? 'lg:grid-cols-2' : 'grid-cols-1'} gap-10 lg:gap-16 items-start`}>
                   
                   {/* Coluna 1: Textos, Pacotes e Info */}
@@ -558,6 +587,18 @@ export default function App() {
                       <div className="p-6 sm:p-8 md:p-10 bg-emerald-50/50 rounded-[28px] sm:rounded-[40px]">
                         <h3 className="text-xl sm:text-2xl font-serif mb-4">{activeService.about.title}</h3>
                         <p className="opacity-70 leading-relaxed whitespace-pre-line text-sm sm:text-base">{activeService.about.text}</p>
+=======
+                <div className={`mb-12 md:mb-20 grid ${activeService.images && activeService.images.length > 0 ? 'lg:grid-cols-2' : 'grid-cols-1'} gap-8 lg:gap-16 items-start w-full`}>
+                  
+                  {/* Coluna 1: Textos, Pacotes e Info */}
+                  <div className="space-y-10 sm:space-y-12 order-2 lg:order-1 w-full min-w-0">
+                    
+                    {/* Sobre */}
+                    {activeService.about && (
+                      <div className="p-6 sm:p-8 md:p-10 bg-emerald-50/50 rounded-[24px] sm:rounded-[40px] w-full">
+                        <h3 className="text-xl sm:text-2xl font-serif mb-4 break-words">{activeService.about.title}</h3>
+                        <p className="opacity-70 leading-relaxed whitespace-pre-line text-sm sm:text-base break-words">{activeService.about.text}</p>
+>>>>>>> 5a11010a035facbbe914e7884f58b05ab53a4740
                         
                         {activeService.highlights && (
                           <div className="flex flex-wrap gap-2 sm:gap-3 mt-6 sm:mt-8">
@@ -573,6 +614,7 @@ export default function App() {
 
                     {/* Pacotes */}
                     {activeService.packages && (
+<<<<<<< HEAD
                       <div>
                         <h3 className="text-2xl sm:text-3xl font-serif mb-6 sm:mb-8">Nossos Pacotes</h3>
                         <div className="grid gap-4">
@@ -582,8 +624,19 @@ export default function App() {
                               <ul className="space-y-2 sm:space-y-3">
                                 {pkg.details.map((detail: string, j: number) => (
                                   <li key={j} className="flex items-start gap-2.5 sm:gap-3 opacity-70 text-xs sm:text-sm">
+=======
+                      <div className="w-full">
+                        <h3 className="text-2xl sm:text-3xl font-serif mb-6 sm:mb-8">Nossos Pacotes</h3>
+                        <div className="grid gap-4 w-full">
+                          {activeService.packages.map((pkg: any, i: number) => (
+                            <div key={i} className="p-5 sm:p-6 md:p-8 bg-white border border-stone-100 rounded-2xl sm:rounded-3xl shadow-sm hover:shadow-md transition-shadow w-full">
+                              <h4 className="text-lg sm:text-xl font-bold mb-4 text-emerald-950 break-words">{pkg.name}</h4>
+                              <ul className="space-y-3 sm:space-y-4 w-full">
+                                {pkg.details.map((detail: string, j: number) => (
+                                  <li key={j} className="flex items-start gap-2.5 sm:gap-3 opacity-70 text-xs sm:text-sm w-full">
+>>>>>>> 5a11010a035facbbe914e7884f58b05ab53a4740
                                     <CheckCircle2 size={16} className="text-emerald-600 shrink-0 mt-0.5" />
-                                    <span>{detail}</span>
+                                    <span className="flex-1 break-words leading-relaxed">{detail}</span>
                                   </li>
                                 ))}
                               </ul>
@@ -595,6 +648,7 @@ export default function App() {
 
                     {/* Serviços Adicionais */}
                     {activeService.extraServices && (
+<<<<<<< HEAD
                       <div>
                         <h3 className="text-xl sm:text-2xl font-serif mb-6">{activeService.extraServices.title}</h3>
                         <div className="grid gap-3 sm:gap-4">
@@ -602,6 +656,15 @@ export default function App() {
                             <div key={i} className="p-4 sm:p-5 bg-stone-50 rounded-xl sm:rounded-2xl">
                               <h4 className="font-bold text-stone-900 text-sm sm:text-base mb-1">{item.name}</h4>
                               <p className="text-xs sm:text-sm opacity-60">{item.detail}</p>
+=======
+                      <div className="w-full">
+                        <h3 className="text-xl sm:text-2xl font-serif mb-6">{activeService.extraServices.title}</h3>
+                        <div className="grid gap-3 sm:gap-4 w-full">
+                          {activeService.extraServices.items.map((item: any, i: number) => (
+                            <div key={i} className="p-4 sm:p-5 bg-stone-50 rounded-xl sm:rounded-2xl w-full">
+                              <h4 className="font-bold text-stone-900 text-sm sm:text-base mb-1 break-words">{item.name}</h4>
+                              <p className="text-xs sm:text-sm opacity-60 break-words">{item.detail}</p>
+>>>>>>> 5a11010a035facbbe914e7884f58b05ab53a4740
                             </div>
                           ))}
                         </div>
@@ -610,6 +673,7 @@ export default function App() {
 
                     {/* FAQ */}
                     {activeService.faq && (
+<<<<<<< HEAD
                       <div>
                         <h3 className="text-xl sm:text-2xl font-serif mb-6">Dúvidas Frequentes</h3>
                         <div className="space-y-3 sm:space-y-4">
@@ -617,6 +681,15 @@ export default function App() {
                             <div key={i} className="p-5 sm:p-6 border border-stone-200 rounded-2xl sm:rounded-3xl">
                                <p className="font-bold text-sm sm:text-base mb-2 text-stone-900">{item.q}</p>
                                <p className="opacity-60 text-xs sm:text-sm leading-relaxed">{item.a}</p>
+=======
+                      <div className="w-full">
+                        <h3 className="text-xl sm:text-2xl font-serif mb-6">Dúvidas Frequentes</h3>
+                        <div className="space-y-3 sm:space-y-4 w-full">
+                          {activeService.faq.map((item: any, i: number) => (
+                            <div key={i} className="p-5 sm:p-6 border border-stone-200 rounded-2xl sm:rounded-3xl w-full">
+                               <p className="font-bold text-sm sm:text-base mb-2 text-stone-900 break-words">{item.q}</p>
+                               <p className="opacity-60 text-xs sm:text-sm leading-relaxed break-words">{item.a}</p>
+>>>>>>> 5a11010a035facbbe914e7884f58b05ab53a4740
                             </div>
                           ))}
                         </div>
@@ -627,8 +700,13 @@ export default function App() {
 
                   {/* Coluna 2: Carrossel */}
                   {activeService.images && activeService.images.length > 0 && (
+<<<<<<< HEAD
                     <div className="lg:sticky top-8 space-y-4 order-1 lg:order-2">
                       <div className="relative rounded-[28px] sm:rounded-[40px] overflow-hidden bg-stone-100 aspect-[4/5] shadow-xl">
+=======
+                    <div className="lg:sticky top-8 space-y-4 order-1 lg:order-2 w-full min-w-0">
+                      <div className="relative rounded-[24px] sm:rounded-[40px] overflow-hidden bg-stone-100 aspect-[4/5] shadow-xl w-full">
+>>>>>>> 5a11010a035facbbe914e7884f58b05ab53a4740
                         <AnimatePresence mode="wait">
                           <motion.img
                             key={carouselIndex}
@@ -683,7 +761,11 @@ export default function App() {
 
                       {/* Miniaturas do Carrossel */}
                       {activeService.images.length > 1 && (
+<<<<<<< HEAD
                         <div className="flex gap-2 sm:gap-3 overflow-x-auto pb-4 pt-2 snap-x">
+=======
+                        <div className="flex gap-2 sm:gap-3 overflow-x-auto pb-4 pt-2 snap-x w-full custom-scrollbar">
+>>>>>>> 5a11010a035facbbe914e7884f58b05ab53a4740
                           {activeService.images.map((img: string, i: number) => (
                             <button
                               key={i}
@@ -702,18 +784,32 @@ export default function App() {
                 </div>
 
                 {/* Chamada para Ação no Final do Modal */}
+<<<<<<< HEAD
                 <div className="p-8 sm:p-12 md:p-20 bg-emerald-950 text-white rounded-[32px] sm:rounded-[60px] text-center space-y-6 sm:space-y-8 relative overflow-hidden">
                    <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 blur-[100px] rounded-full" />
                    <h4 className="text-2xl sm:text-3xl md:text-5xl font-serif leading-tight">Vamos eternizar<br/> esse momento?</h4>
                    <p className="opacity-60 max-w-md mx-auto font-light text-sm sm:text-base">Cada clique é único e cheio de significado. Agende sua data hoje mesmo.</p>
                    <div className="pt-2 sm:pt-4">
+=======
+                <div className="p-6 sm:p-12 md:p-20 bg-emerald-950 text-white rounded-[24px] sm:rounded-[60px] text-center space-y-6 sm:space-y-8 relative overflow-hidden w-full">
+                   <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 blur-[100px] rounded-full" />
+                   <h4 className="text-2xl sm:text-3xl md:text-5xl font-serif leading-tight break-words">Vamos eternizar<br/> esse momento?</h4>
+                   <p className="opacity-60 max-w-md mx-auto font-light text-sm sm:text-base break-words">Cada clique é único e cheio de significado. Agende sua data hoje mesmo.</p>
+                   <div className="pt-2 sm:pt-4 w-full">
+>>>>>>> 5a11010a035facbbe914e7884f58b05ab53a4740
                       <a 
                         href={`https://wa.me/${activeService.whatsapp || '5547991322923'}`}
                         target="_blank"
                         rel="noreferrer"
+<<<<<<< HEAD
                         className="w-full sm:w-auto px-6 py-4 sm:px-12 sm:py-6 rounded-2xl sm:rounded-3xl bg-white text-emerald-950 font-bold text-base sm:text-xl inline-flex items-center justify-center gap-3 sm:gap-4 hover:scale-105 active:scale-95 transition-transform"
                       >
                          Reserve sua data prevista <MessageCircle size={22} className="shrink-0" />
+=======
+                        className="w-full sm:w-auto px-4 py-4 sm:px-12 sm:py-6 rounded-2xl sm:rounded-3xl bg-white text-emerald-950 font-bold text-sm sm:text-xl flex flex-wrap sm:inline-flex items-center justify-center gap-2 sm:gap-4 hover:scale-105 active:scale-95 transition-transform text-center shadow-xl"
+                      >
+                         <span className="break-words">Reserve sua data prevista</span> <MessageCircle size={22} className="shrink-0" />
+>>>>>>> 5a11010a035facbbe914e7884f58b05ab53a4740
                       </a>
                    </div>
                 </div>
@@ -754,9 +850,15 @@ export default function App() {
       </AnimatePresence>
 
       <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${scrolled ? 'glass py-2 sm:py-3 shadow-xl shadow-black/5' : 'bg-transparent py-4 sm:py-6'}`}>
+<<<<<<< HEAD
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
           <div className="flex items-center gap-4 group cursor-pointer text-stone-900">
             <div className="h-12 sm:h-16 md:h-20 w-auto min-w-[130px] sm:min-w-[180px] md:min-w-[220px] max-w-[160px] sm:max-w-none rounded-xl overflow-hidden transition-all group-hover:scale-105 flex items-center justify-center p-1.5 sm:p-2 bg-white/40 backdrop-blur-sm">
+=======
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center w-full">
+          <div className="flex items-center gap-4 group cursor-pointer text-stone-900">
+            <div className="h-12 sm:h-16 md:h-20 w-auto min-w-[110px] sm:min-w-[180px] md:min-w-[220px] max-w-[140px] sm:max-w-none rounded-xl overflow-hidden transition-all group-hover:scale-105 flex items-center justify-center p-1.5 sm:p-2 bg-white/40 backdrop-blur-sm">
+>>>>>>> 5a11010a035facbbe914e7884f58b05ab53a4740
               <img src="/logo.png" alt="Ver Crescer Logo" className="h-full w-auto object-contain" referrerPolicy="no-referrer" onError={(e) => { const target = e.target as HTMLImageElement; target.src = "/api/artifacts/a-0"; }}/>
             </div>
           </div>
@@ -767,16 +869,28 @@ export default function App() {
             <a href="https://www.instagram.com/vercrescerfotografia/" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full hover:bg-emerald-50 transition-colors text-stone-900 opacity-60 hover:opacity-100"><Instagram size={20} /></a>
             <a href="https://wa.me/5547991322923" target="_blank" rel="noreferrer" className="px-6 py-2.5 rounded-full bg-emerald-900 text-white text-sm font-bold shadow-xl hover:bg-emerald-800 transition-all transform active:scale-95">Agendar Ensaio</a>
           </div>
+<<<<<<< HEAD
           <button className="md:hidden text-stone-900 p-2" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+=======
+          <button className="md:hidden text-stone-900 p-2 shrink-0" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+>>>>>>> 5a11010a035facbbe914e7884f58b05ab53a4740
             {isMenuOpen ? <X size={26} /> : <Menu size={26} />}
           </button>
         </div>
         {isMenuOpen && (
+<<<<<<< HEAD
           <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} className="md:hidden glass border-t border-black/5 px-6 py-6 flex flex-col gap-5 text-stone-900 shadow-2xl">
             {['Estúdio', 'Depoimentos', 'Contato'].map((item) => (
               <a key={item} href={`#${item.toLowerCase()}`} className="text-lg font-medium" onClick={() => setIsMenuOpen(false)}>{item}</a>
             ))}
             <div className="flex items-center gap-6 py-2 border-t border-black/5">
+=======
+          <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} className="md:hidden glass border-t border-black/5 px-6 py-6 flex flex-col gap-5 text-stone-900 shadow-2xl w-full">
+            {['Estúdio', 'Depoimentos', 'Contato'].map((item) => (
+              <a key={item} href={`#${item.toLowerCase()}`} className="text-lg font-medium" onClick={() => setIsMenuOpen(false)}>{item}</a>
+            ))}
+            <div className="flex items-center gap-6 py-2 border-t border-black/5 w-full">
+>>>>>>> 5a11010a035facbbe914e7884f58b05ab53a4740
               <a href="https://www.instagram.com/vercrescerfotografia/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-stone-900 font-medium"><Instagram size={20} /><span>Instagram</span></a>
             </div>
             <a href="https://wa.me/5547991322923" target="_blank" rel="noreferrer" className="w-full py-4 rounded-2xl bg-emerald-900 text-white font-bold text-center active:scale-95 shadow-md">Agendar Ensaio</a>
@@ -784,6 +898,7 @@ export default function App() {
         )}
       </nav>
 
+<<<<<<< HEAD
       <section className="relative pt-32 sm:pt-40 md:pt-48 pb-16 sm:pb-24 md:pb-32 px-4 sm:px-6 overflow-hidden">
         <div className="max-w-7xl mx-auto text-center relative z-10 text-stone-900">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full border border-black/5 bg-black/5 backdrop-blur-md text-[9px] sm:text-[10px] font-bold tracking-[0.15em] sm:tracking-[0.2em] uppercase mb-6 sm:mb-10 text-stone-600"><Sparkles size={12} /> Eternizando Momentos Especiais</motion.div>
@@ -791,13 +906,26 @@ export default function App() {
           <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.2 }} className="max-w-2xl mx-auto text-base sm:text-lg md:text-xl opacity-60 font-light mb-10 sm:mb-14 leading-relaxed tracking-tight px-2">No Estúdio VerCrescer, entregamos dedicação em cada clique. Capturamos a essência da sua família e a força da sua marca.</motion.p>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.4 }} className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-5 px-4 sm:px-0">
             <a href="https://wa.me/5547991322923" target="_blank" rel="noreferrer" className="group w-full sm:w-auto px-8 py-5 sm:px-12 sm:py-6 rounded-2xl bg-emerald-900 text-white font-bold flex items-center justify-center gap-3 sm:gap-4 hover:translate-y-[-2px] hover:shadow-2xl hover:shadow-emerald-900/20 transition-all text-lg sm:text-xl active:scale-95">Falar no WhatsApp <MessageCircle size={22} className="transition-transform group-hover:scale-110 shrink-0" /></a>
+=======
+      <section className="relative pt-32 sm:pt-40 md:pt-48 pb-16 sm:pb-24 md:pb-32 px-4 sm:px-6 overflow-hidden w-full">
+        <div className="max-w-7xl mx-auto text-center relative z-10 text-stone-900 w-full">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full border border-black/5 bg-black/5 backdrop-blur-md text-[9px] sm:text-[10px] font-bold tracking-[0.15em] sm:tracking-[0.2em] uppercase mb-6 sm:mb-10 text-stone-600 break-words"><Sparkles size={12} className="shrink-0" /> Eternizando Momentos Especiais</motion.div>
+          <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }} className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-serif tracking-tighter mb-6 md:mb-10 leading-[0.9] text-stone-900 break-words w-full">Cada momento, <br /> <span className="italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-stone-900 via-stone-500 to-stone-900">uma história.</span></motion.h1>
+          <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.2 }} className="max-w-2xl mx-auto text-base sm:text-lg md:text-xl opacity-60 font-light mb-10 sm:mb-14 leading-relaxed tracking-tight px-2 break-words w-full">No Estúdio VerCrescer, entregamos dedicação em cada clique. Capturamos a essência da sua família e a força da sua marca.</motion.p>
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.4 }} className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-5 px-4 sm:px-0 w-full">
+            <a href="https://wa.me/5547991322923" target="_blank" rel="noreferrer" className="group w-full sm:w-auto px-8 py-5 sm:px-12 sm:py-6 rounded-2xl bg-emerald-900 text-white font-bold flex items-center justify-center gap-3 sm:gap-4 hover:translate-y-[-2px] hover:shadow-2xl hover:shadow-emerald-900/20 transition-all text-lg sm:text-xl active:scale-95 text-center break-words">Falar no WhatsApp <MessageCircle size={22} className="transition-transform group-hover:scale-110 shrink-0" /></a>
+>>>>>>> 5a11010a035facbbe914e7884f58b05ab53a4740
           </motion.div>
         </div>
       </section>
 
       <a href="https://wa.me/5547991322923" target="_blank" rel="noreferrer" className="fixed bottom-4 right-4 sm:bottom-8 sm:right-8 z-[90] w-14 h-14 sm:w-16 sm:h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all animate-bounce-slow" aria-label="Contact on WhatsApp"><MessageCircle size={28} className="sm:w-8 sm:h-8" fill="currentColor" /></a>
 
+<<<<<<< HEAD
       <section className="py-8 sm:py-10 border-y border-emerald-900/5 overflow-hidden whitespace-nowrap bg-emerald-50/30">
+=======
+      <section className="py-8 sm:py-10 border-y border-emerald-900/5 overflow-hidden whitespace-nowrap bg-emerald-50/30 w-full">
+>>>>>>> 5a11010a035facbbe914e7884f58b05ab53a4740
         <div className="flex animate-scroll gap-12 sm:gap-20">
           {[...services, ...services].map((s, i) => (
             <div key={i} className="flex items-center gap-2.5 sm:gap-3 opacity-30 hover:opacity-100 transition-opacity cursor-default text-stone-900">
@@ -808,6 +936,7 @@ export default function App() {
         </div>
       </section>
 
+<<<<<<< HEAD
       <section id="estúdio" className="py-16 sm:py-24 md:py-32 px-4 sm:px-6 bg-emerald-50/50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 sm:mb-20 md:mb-24 max-w-2xl mx-auto">
@@ -823,33 +952,67 @@ export default function App() {
                   <p className="opacity-50 text-xs sm:text-sm leading-relaxed mb-6 sm:mb-8">{service.desc}</p>
                 </div>
                 <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-emerald-900/40 group-hover:text-emerald-900 transition-all">Ver Detalhes <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" /></div>
+=======
+      <section id="estúdio" className="py-16 sm:py-24 md:py-32 px-4 sm:px-6 bg-emerald-50/50 w-full">
+        <div className="max-w-7xl mx-auto w-full">
+          <div className="text-center mb-12 sm:mb-20 md:mb-24 max-w-2xl mx-auto w-full">
+            <h2 className="text-3xl sm:text-5xl md:text-7xl font-serif mb-4 sm:mb-8 tracking-tighter break-words">Nossas Especialidades</h2>
+            <p className="opacity-60 text-base sm:text-lg font-light px-2 break-words">Desde o primeiro batimento até o primeiro aninho, cada fase merece um olhar único.</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 w-full">
+            {services.map((service, idx) => (
+              <motion.div key={idx} whileHover={{ y: -5 }} onClick={() => setActiveService(service)} className="p-6 sm:p-8 rounded-[24px] sm:rounded-[32px] bg-white border border-black/5 shadow-sm transition-all group cursor-pointer hover:shadow-xl hover:border-stone-200 flex flex-col justify-between w-full">
+                <div className="w-full">
+                  <div className="w-12 h-12 rounded-2xl bg-emerald-100/50 flex items-center justify-center mb-6 text-emerald-700/50 group-hover:bg-emerald-900 group-hover:text-white transition-all shrink-0">{service.icon}</div>
+                  <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 tracking-tight break-words">{service.title}</h3>
+                  <p className="opacity-50 text-xs sm:text-sm leading-relaxed mb-6 sm:mb-8 break-words">{service.desc}</p>
+                </div>
+                <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-emerald-900/40 group-hover:text-emerald-900 transition-all shrink-0">Ver Detalhes <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" /></div>
+>>>>>>> 5a11010a035facbbe914e7884f58b05ab53a4740
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
+<<<<<<< HEAD
       <section id="depoimentos" className="py-16 sm:py-24 md:py-32 px-4 sm:px-6 bg-white">
         <div className="max-w-7xl mx-auto text-stone-900">
           <h2 className="text-3xl sm:text-5xl md:text-6xl font-serif mb-12 sm:mb-20 text-center tracking-tighter">O que dizem sobre nós</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+=======
+      <section id="depoimentos" className="py-16 sm:py-24 md:py-32 px-4 sm:px-6 bg-white w-full">
+        <div className="max-w-7xl mx-auto text-stone-900 w-full">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-serif mb-12 sm:mb-20 text-center tracking-tighter break-words w-full">O que dizem sobre nós</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 w-full">
+>>>>>>> 5a11010a035facbbe914e7884f58b05ab53a4740
             {[
               { name: "Raquel", role: "", text: "Nossa experiência com a Ver Crescer tem sido especial desde os primeiros meses da Analua. Cada mesversário e ensaio foi marcado por fotinhos muito lindas e do jeitinho que sempre sonhamos, com um cenário mais clean, a nossa cara. Sempre nos sentimos acolhidos pela equipe, que tem uma sensibilidade incrível para lidar com os bebês e transformar cada fase em uma lembrança única. Muito obrigada sempre por toda atenção com a nossa família." },
               { name: "Fernanda", role: "", text: "Aproveitando o oportunidade, queria te agradecer mais uma vez por tudo, cada palavra, cada massagem, cada conselho, você estava ali com a gente 1000%, se doou totalmente pra viver aquele momento… você foi além do profissional, super humana, atenciosa, preocupada o tempo todo com a gente, com nosso bem estar, foi muito além da fotografia! Que Deus abençoe sempre sua vida, você é maravilhosaaaaaaaa, e vou eternamente grata" },
               { name: "Bianca", role: "", text: "Antes de fazer meu primeiro ensaio, eu achava que era só sobre ter fotos bonitas. Hoje, vejo que é sobre guardar fases da vida que nunca mais voltam… Depois que tive minhas filhas, isso fez ainda mais sentido para mim, o parto foi um dos dias mais marcantes da minha vida e, no meio de tantas emoções, existem detalhes que a gente acaba nem conseguindo absorver e poder olhar as fotos/videos e reviver aquele momento é algo que eu nunca imaginei que teria tanto valor. Lembro até hoje do meu nervosismo naquela madrugada do parto e foi a primeira vez que eu vi a Thami, nem se conhecíamos e ela foi a pessoa mais importante naquele momento, que esteve comigo todo tempo e me acalmou até mais que o médico e enfermeiras kkkk, nunca vou esquecer disso e de tudo oq ela fez por nós. Existem momentos que passam em questão de horas mas mudam a nossa vida pra sempre, ter tudo registrado me permite reviver cada detalhe que eu jamais conseguiria lembrar com a mesma intensidade… Sem contar que hoje posso mostrar todos os registros pras minhas filhas que ficam encantadas vendo elas nascendo, nos ensaios bebezinhas, aniversários… a Ver Crescer faz parte da nossa vida, dos momentos mais lindos e inesquecíveis que já vivemos, sou muuito grata por isso! confesso que fico ansiosa pra engravidar novamente e poder reviver todos esses registros com vocês. Vocês já são nossa família e eu jamais trocaria o trabalho impecável de vocês que sempre me entregaram além e com tanta excelência, quero que acompanhem todas as fases porque esses momentos passam muito rápido mas essas memórias registradas ficam pra sempre!" }
             ].map((dep, i) => (
+<<<<<<< HEAD
               <div key={i} className="bg-emerald-50/30 p-6 sm:p-8 md:p-10 rounded-[24px] sm:rounded-[32px] border border-emerald-900/5 relative shadow-sm flex flex-col justify-between">
                 <div>
                   <div className="flex gap-1 text-emerald-600 mb-4 sm:mb-6">{[...Array(5)].map((_, i) => <Star key={i} size={16} fill="currentColor" />)}</div>
                   <p className="italic opacity-70 text-sm sm:text-base md:text-lg mb-6 sm:mb-8 leading-relaxed">"{dep.text}"</p>
                 </div>
                 <div><p className="font-bold text-base sm:text-lg">{dep.name}</p><p className="text-[10px] sm:text-xs font-bold uppercase opacity-40 tracking-widest leading-none mt-1">{dep.role}</p></div>
+=======
+              <div key={i} className="bg-emerald-50/30 p-6 sm:p-8 md:p-10 rounded-[24px] sm:rounded-[32px] border border-emerald-900/5 relative shadow-sm flex flex-col justify-between w-full">
+                <div className="w-full">
+                  <div className="flex gap-1 text-emerald-600 mb-4 sm:mb-6">{[...Array(5)].map((_, i) => <Star key={i} size={16} fill="currentColor" />)}</div>
+                  <p className="italic opacity-70 text-sm sm:text-base md:text-lg mb-6 sm:mb-8 leading-relaxed break-words w-full">"{dep.text}"</p>
+                </div>
+                <div className="w-full"><p className="font-bold text-base sm:text-lg break-words">{dep.name}</p><p className="text-[10px] sm:text-xs font-bold uppercase opacity-40 tracking-widest leading-none mt-1 break-words">{dep.role}</p></div>
+>>>>>>> 5a11010a035facbbe914e7884f58b05ab53a4740
               </div>
             ))}
           </div>
         </div>
       </section>
 
+<<<<<<< HEAD
       <section id="contato" className="py-16 sm:py-24 md:py-32 px-4 sm:px-6 mb-10 sm:mb-20">
         <div className="max-w-5xl mx-auto bg-emerald-950 text-white rounded-[32px] sm:rounded-[48px] md:rounded-[60px] p-8 sm:p-14 md:p-24 text-center relative overflow-hidden shadow-2xl">
           <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 blur-[100px] -z-10 rounded-full" />
@@ -861,21 +1024,42 @@ export default function App() {
             <div className="flex flex-col items-center gap-1 opacity-60">
                <div className="flex items-center gap-2 text-xs sm:text-sm font-bold tracking-widest uppercase"><MapPin size={16} className="shrink-0" /> Balneário Camboriú, SC</div>
                <p className="text-[10px] font-bold tracking-tighter opacity-100">Trade Park | Sala 204 | KM 131</p>
+=======
+      <section id="contato" className="py-16 sm:py-24 md:py-32 px-4 sm:px-6 mb-10 sm:mb-20 w-full">
+        <div className="max-w-5xl mx-auto bg-emerald-950 text-white rounded-[32px] sm:rounded-[48px] md:rounded-[60px] p-8 sm:p-14 md:p-24 text-center relative overflow-hidden shadow-2xl w-full">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 blur-[100px] -z-10 rounded-full" />
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 blur-[100px] -z-10 rounded-full" />
+          <h2 className="text-3xl sm:text-5xl md:text-7xl font-serif mb-4 sm:mb-8 tracking-tighter break-words">Vamos conversar?</h2>
+          <p className="max-w-xl mx-auto text-base sm:text-lg md:text-xl opacity-70 mb-8 sm:mb-12 font-light px-2 break-words">Todo grande momento merece ser registrado com perfeição. Clique abaixo e tire suas dúvidas.</p>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-6 w-full">
+            <a href="https://wa.me/5547991322923" className="w-full md:w-auto px-8 py-5 sm:px-12 sm:py-6 rounded-2xl sm:rounded-3xl bg-white text-emerald-950 hover:bg-emerald-50 font-bold text-lg sm:text-xl flex items-center justify-center gap-3 sm:gap-4 transition-all shadow-2xl hover:scale-105 active:scale-95 text-center break-words"><MessageCircle size={24} className="shrink-0" /> Fale com a Maria</a>
+            <div className="flex flex-col items-center gap-1 opacity-60 w-full">
+               <div className="flex items-center justify-center gap-2 text-xs sm:text-sm font-bold tracking-widest uppercase break-words w-full"><MapPin size={16} className="shrink-0" /> Balneário Camboriú, SC</div>
+               <p className="text-[10px] font-bold tracking-tighter opacity-100 break-words w-full text-center">Trade Park | Sala 204 | KM 131</p>
+>>>>>>> 5a11010a035facbbe914e7884f58b05ab53a4740
             </div>
           </div>
         </div>
       </section>
 
+<<<<<<< HEAD
       <footer className="py-12 sm:py-20 px-4 sm:px-6 border-t border-emerald-900/5 bg-[#f5fbf5]">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 sm:gap-12 text-center md:text-left text-stone-900">
           <div className="flex flex-col gap-4 items-center md:items-start">
             <div className="flex items-center gap-4 justify-center md:justify-start group cursor-pointer">
+=======
+      <footer className="py-12 sm:py-20 px-4 sm:px-6 border-t border-emerald-900/5 bg-[#f5fbf5] w-full">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 sm:gap-12 text-center md:text-left text-stone-900 w-full">
+          <div className="flex flex-col gap-4 items-center md:items-start w-full md:w-auto">
+            <div className="flex items-center gap-4 justify-center md:justify-start group cursor-pointer w-full md:w-auto">
+>>>>>>> 5a11010a035facbbe914e7884f58b05ab53a4740
               <div className="h-14 sm:h-16 w-auto min-w-[140px] sm:min-w-[180px] rounded-lg overflow-hidden bg-white/40 flex items-center justify-center p-1.5 sm:p-2 transition-transform group-hover:scale-105">
                 <img src="/logo.png" alt="Logo" className="h-full w-auto object-contain" referrerPolicy="no-referrer" onError={(e) => { const target = e.target as HTMLImageElement; target.src = "/api/artifacts/a-0"; }}/>
               </div>
             </div>
-            <p className="text-xs opacity-50 max-w-xs font-light leading-relaxed">Eternizando momentos no Estúdio ou em Maternidades de Blumenau, Brusque, Itajaí e Balneário Camboriú.</p>
+            <p className="text-xs opacity-50 max-w-xs font-light leading-relaxed break-words w-full">Eternizando momentos no Estúdio ou em Maternidades de Blumenau, Brusque, Itajaí e Balneário Camboriú.</p>
           </div>
+<<<<<<< HEAD
           <div className="flex flex-wrap justify-center gap-6 sm:gap-10 text-[10px] font-bold tracking-[0.2em] sm:tracking-[0.3em] uppercase opacity-40">
             <a href="https://www.instagram.com/vercrescerfotografia/" target="_blank" rel="noopener noreferrer" className="hover:text-stone-900 transition-colors flex items-center gap-2"><Instagram className="w-3 h-3 shrink-0" /> Instagram</a>
             <a href="mailto:vercrescerfotografia@gmail.com" className="hover:text-stone-900 transition-colors uppercase">E-mail</a>
@@ -883,6 +1067,15 @@ export default function App() {
           <div className="text-center md:text-right">
             <p className="text-[10px] font-bold opacity-30 tracking-[0.2em] sm:tracking-[0.3em] uppercase mb-1">© 2026 VERCRESCER FOTOGRAFIAS</p>
             <p className="text-[9px] sm:text-[10px] font-mono opacity-10">DISPONÍVEL 24H PARA EMERGÊNCIAS</p>
+=======
+          <div className="flex flex-wrap justify-center md:justify-end gap-4 sm:gap-10 text-[9px] sm:text-[10px] font-bold tracking-wider sm:tracking-widest uppercase opacity-40 w-full md:w-auto">
+            <a href="https://www.instagram.com/vercrescerfotografia/" target="_blank" rel="noopener noreferrer" className="hover:text-stone-900 transition-colors flex items-center gap-2"><Instagram className="w-3 h-3 shrink-0" /> Instagram</a>
+            <a href="mailto:vercrescerfotografia@gmail.com" className="hover:text-stone-900 transition-colors uppercase">E-mail</a>
+          </div>
+          <div className="text-center md:text-right w-full md:w-auto mt-4 md:mt-0">
+            <p className="text-[10px] font-bold opacity-30 tracking-wider sm:tracking-widest uppercase mb-1 break-words">© 2026 VERCRESCER FOTOGRAFIAS</p>
+            <p className="text-[9px] sm:text-[10px] font-mono opacity-10 break-words">DISPONÍVEL 24H PARA EMERGÊNCIAS</p>
+>>>>>>> 5a11010a035facbbe914e7884f58b05ab53a4740
           </div>
         </div>
       </footer>
