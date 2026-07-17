@@ -304,7 +304,7 @@ export default function App() {
         ]
       },
       images: [
-        acom1,
+        acom1
         
       ]
     },
