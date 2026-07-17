@@ -21,7 +21,6 @@ import {
 import { useState, useEffect } from 'react';
 
 // Importações originais
-import gestante1 from './assets/images/gestante1.png';
 import gestante2 from './assets/images/gestante2.png';
 import gestante3 from './assets/images/gestante3.png';
 import gestante4 from './assets/images/gestante4.png';
@@ -142,6 +141,7 @@ export default function App() {
       ],
       destaque: fotoFernanda,
       images: [
+        gestante2,
         gestante3,
         gestante4,
         gestante5,
