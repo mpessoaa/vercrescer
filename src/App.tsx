@@ -63,10 +63,6 @@ import new16 from './assets/images/new16.jpeg';
 
 import acom1 from './assets/images/acom1.png';
 
-
-import acom5 from './assets/images/acom5.png';
-import acom6 from './assets/images/acom6.png';
-
 import equipe1 from './assets/images/equipe1.png';
 import equipe2 from './assets/images/equipe2.png';
 import equipe3 from './assets/images/equipe3.png';
