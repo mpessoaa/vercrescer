@@ -750,7 +750,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center w-full">
           <div className="flex items-center gap-4 group cursor-pointer text-stone-900">
             <div className="h-12 sm:h-16 md:h-20 w-auto min-w-[110px] sm:min-w-[180px] md:min-w-[220px] max-w-[140px] sm:max-w-none rounded-xl overflow-hidden transition-all group-hover:scale-105 flex items-center justify-center p-1.5 sm:p-2 bg-white/40 backdrop-blur-sm">
-              <img src="/logo.png" alt="Ver Crescer Logo" className="h-full w-auto object-contain" referrerPolicy="no-referrer" onError={(e) => { const target = e.target as HTMLImageElement; target.src = "/api/artifacts/a-0"; }}/>
+              <img src="/logo.png" alt="Ver Crescer Logo" className="h-full w-auto object-contain" />
             </div>
           </div>
           <div className="hidden md:flex items-center gap-10">
