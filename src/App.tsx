@@ -685,7 +685,7 @@ export default function App() {
                                 i === carouselIndex ? 'border-emerald-900 scale-95 shadow-md' : 'border-transparent opacity-50 hover:opacity-100'
                               }`}
                             >
-                              <img src={img} referrerPolicy="no-referrer" className="w-full h-full object-cover" alt="" />
+                              <img src={img} referrerPolicy="no-referrer" loading="lazy" className="w-full h-full object-cover" alt="" />
                             </button>
                           ))}
                         </div>
