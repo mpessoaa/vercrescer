@@ -26,12 +26,40 @@ import gestante2 from './assets/images/gestante2.png';
 import gestante3 from './assets/images/gestante3.png';
 import gestante4 from './assets/images/gestante4.png';
 import gestante5 from './assets/images/gestante5.png';
+import gestante6 from './assets/images/gestante6.jpeg';
+import gestante7 from './assets/images/gestante7.jpeg';
+import gestante8 from './assets/images/gestante8.jpeg';
+import gestante9 from './assets/images/gestante9.jpeg';
+import gestante10 from './assets/images/gestante10.jpeg';
+import gestante11 from './assets/images/gestante11.jpeg';
+import gestante12 from './assets/images/gestante12.jpeg';
+import gestante13 from './assets/images/gestante13.jpeg';
+import gestante14 from './assets/images/gestante14.jpeg';
+import gestante15 from './assets/images/gestante15.jpeg';
+import gestante16 from './assets/images/gestante16.jpeg';
+import gestante17 from './assets/images/gestante17.jpeg';
+import gestante18 from './assets/images/gestante18.jpeg';
+import gestante19 from './assets/images/gestante19.jpeg';
+import gestante20 from './assets/images/gestante20.jpeg';
+import gestante21 from './assets/images/gestante21.jpeg';
+import gestante22 from './assets/images/gestante22.jpeg';
 
 import new1 from './assets/images/new1B.png';
 import new2 from './assets/images/new2B.png';
 import new3 from './assets/images/new3B.png';
 import new4 from './assets/images/newB4.png';
 import new5 from './assets/images/new5B.png';
+import new6 from './assets/images/new6.jpeg';
+import new7 from './assets/images/new7.jpeg';
+import new8 from './assets/images/new8.jpeg';
+import new9 from './assets/images/new9.jpeg';
+import new10 from './assets/images/new10.jpeg';
+import new11 from './assets/images/new11.jpeg';
+import new12 from './assets/images/new12.jpeg';
+import new13 from './assets/images/new13.jpeg';
+import new14 from './assets/images/new14.jpeg';
+import new15 from './assets/images/new15.jpeg';
+import new16 from './assets/images/new16.jpeg';
 
 import acom1 from './assets/images/acom1.png';
 import acom2 from './assets/images/acom2.png';
@@ -64,6 +92,17 @@ import eventos2 from './assets/images/eventos2.png';
 import eventos3 from './assets/images/eventos3.png';
 import eventos4 from './assets/images/eventos4.png';
 import eventos5 from './assets/images/eventos5.png';
+import eventos6 from './assets/images/eventos6.jpeg';
+import eventos7 from './assets/images/eventos7.jpeg';
+import eventos8 from './assets/images/eventos8.jpeg';
+import eventos9 from './assets/images/eventos9.jpeg';
+import eventos10 from './assets/images/eventos10.jpeg';
+import eventos11 from './assets/images/eventos11.jpeg';
+import eventos12 from './assets/images/eventos12.jpeg';
+import eventos13 from './assets/images/eventos13.jpeg';
+import eventos14 from './assets/images/eventos14.jpeg';
+import eventos15 from './assets/images/eventos15.jpeg';
+import eventos16 from './assets/images/eventos16.jpeg';
 
 import fotoFernanda from './assets/images/fernanda.png';
 import fotoTamires from './assets/images/tamires.png';
@@ -108,11 +147,27 @@ export default function App() {
       ],
       destaque: fotoFernanda,
       images: [
-        gestante1,
-        gestante2,
         gestante3,
         gestante4,
-        gestante5
+        gestante5,
+        gestante6,
+        gestante7,
+        gestante8,
+        gestante9,
+        gestante10,
+        gestante11,
+        gestante12,
+        gestante13,
+        gestante14,
+        gestante15,
+        gestante16,
+        gestante17,
+        gestante18,
+        gestante19,
+        gestante20,
+        gestante21,
+        gestante22
+
       ]
     },
     { 
@@ -173,6 +228,8 @@ export default function App() {
         parto3,
         parto4,
         parto5,
+        gestante1,
+        gestante2,
         equipe1,
         equipe2,
         equipe3,
@@ -204,7 +261,18 @@ export default function App() {
         new2,
         new3,
         new4,
-        new5
+        new5,
+        new6,
+        new7,
+        new8,
+        new9,
+        new10,
+        new11,
+        new12,
+        new13,
+        new14,
+        new15,
+        new16
       ]
     },
     { 
@@ -237,10 +305,7 @@ export default function App() {
       },
       images: [
         acom1,
-        acom2,
-        acom3,
-        acom5,
-        acom6
+        
       ]
     },
     { 
@@ -341,7 +406,18 @@ export default function App() {
         eventos2,
         eventos3,
         eventos4,
-        eventos5
+        eventos5,
+        eventos6,
+        eventos7,
+        eventos8,
+        eventos9,
+        eventos10,
+        eventos11,
+        eventos12,
+        eventos13,
+        eventos14,
+        eventos15,
+        eventos16
       ]
     },
     { 
@@ -416,7 +492,7 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen selection:bg-emerald-100 selection:text-emerald-900 bg-[#f9fbf9] text-stone-900 leading-relaxed font-sans">
+    <div className="min-h-screen selection:bg-emerald-100 selection:text-emerald-900 bg-[#f9fbf9] text-stone-900 leading-relaxed font-sans overflow-x-hidden">
       <div className="fixed inset-0 overflow-hidden pointer-events-none -z-10">
         <div className="absolute top-[-10%] left-[-5%] w-[50%] h-[50%] bg-emerald-100/30 rounded-full blur-[120px]" />
         <div className="absolute top-[30%] right-[-10%] w-[40%] h-[40%] bg-white rounded-full blur-[100px]" />
@@ -429,7 +505,7 @@ export default function App() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-10"
+            className="fixed inset-0 z-[100] flex items-center justify-center p-3 sm:p-4 md:p-10"
           >
             <motion.div 
               initial={{ opacity: 0 }}
@@ -443,50 +519,50 @@ export default function App() {
               animate={{ y: 0, opacity: 1, scale: 1 }}
               exit={{ y: 100, opacity: 0, scale: 0.95 }}
               transition={{ type: "spring", damping: 25, stiffness: 200 }}
-              className="relative w-full max-w-7xl h-full bg-white rounded-[40px] shadow-2xl overflow-y-auto"
+              className="relative w-full max-w-7xl h-full bg-white rounded-[28px] sm:rounded-[40px] shadow-2xl overflow-y-auto"
             >
-              <div className="p-8 md:p-16">
+              <div className="p-5 sm:p-8 md:p-16">
                 <button 
                   onClick={() => setActiveService(null)}
-                  className="absolute top-8 right-8 w-12 h-12 rounded-full bg-stone-100 flex items-center justify-center hover:bg-emerald-100 transition-colors z-10"
+                  className="absolute top-4 right-4 md:top-8 md:right-8 w-10 h-10 md:w-12 md:h-12 rounded-full bg-stone-100 flex items-center justify-center hover:bg-emerald-100 transition-colors z-10"
                 >
-                  <X className="text-stone-900" />
+                  <X className="text-stone-900 w-5 h-5 md:w-6 md:h-6" />
                 </button>
 
                 {/* Cabeçalho do Modal */}
-                <div className="flex flex-col md:flex-row gap-10 items-start mb-16">
-                   <div className="w-20 h-20 rounded-[32px] bg-emerald-900 text-white flex items-center justify-center shrink-0">
+                <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-start mb-10 md:mb-16 pr-10 md:pr-0">
+                   <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-[24px] sm:rounded-[32px] bg-emerald-900 text-white flex items-center justify-center shrink-0">
                      {activeService.icon}
                    </div>
-                   <div className="space-y-4">
+                   <div className="space-y-3 sm:space-y-4">
                      <div className="inline-block px-3 py-1 rounded-full bg-emerald-50 text-[10px] font-bold tracking-widest uppercase text-emerald-700">
                         Serviço Especializado
                      </div>
-                     <h2 className="text-5xl md:text-7xl font-serif tracking-tighter leading-none">{activeService.title}</h2>
+                     <h2 className="text-3xl sm:text-5xl md:text-7xl font-serif tracking-tighter leading-none">{activeService.title}</h2>
                      {activeService.hero ? (
-                       <p className="text-xl md:text-2xl font-serif text-stone-900 italic opacity-80 max-w-3xl">{activeService.hero.headline} {activeService.hero.subheadline}</p>
+                       <p className="text-base sm:text-xl md:text-2xl font-serif text-stone-900 italic opacity-80 max-w-3xl">{activeService.hero.headline} {activeService.hero.subheadline}</p>
                      ) : (
-                       <p className="opacity-50 font-light max-w-lg leading-relaxed">{activeService.desc}</p>
+                       <p className="opacity-50 font-light max-w-lg leading-relaxed text-sm sm:text-base">{activeService.desc}</p>
                      )}
                    </div>
                 </div>
 
                 {/* Área Principal: Informações na esquerda, Carrossel na direita */}
-                <div className={`mb-20 grid ${activeService.images && activeService.images.length > 0 ? 'lg:grid-cols-2' : 'grid-cols-1'} gap-16 items-start`}>
+                <div className={`mb-12 md:mb-20 grid ${activeService.images && activeService.images.length > 0 ? 'lg:grid-cols-2' : 'grid-cols-1'} gap-10 lg:gap-16 items-start`}>
                   
                   {/* Coluna 1: Textos, Pacotes e Info */}
-                  <div className="space-y-12">
+                  <div className="space-y-10 sm:space-y-12 order-2 lg:order-1">
                     
                     {/* Sobre */}
                     {activeService.about && (
-                      <div className="p-8 md:p-10 bg-emerald-50/50 rounded-[40px]">
-                        <h3 className="text-2xl font-serif mb-4">{activeService.about.title}</h3>
-                        <p className="opacity-70 leading-relaxed whitespace-pre-line">{activeService.about.text}</p>
+                      <div className="p-6 sm:p-8 md:p-10 bg-emerald-50/50 rounded-[28px] sm:rounded-[40px]">
+                        <h3 className="text-xl sm:text-2xl font-serif mb-4">{activeService.about.title}</h3>
+                        <p className="opacity-70 leading-relaxed whitespace-pre-line text-sm sm:text-base">{activeService.about.text}</p>
                         
                         {activeService.highlights && (
-                          <div className="flex flex-wrap gap-3 mt-8">
+                          <div className="flex flex-wrap gap-2 sm:gap-3 mt-6 sm:mt-8">
                             {activeService.highlights.map((hlt: string, i: number) => (
-                              <span key={i} className="px-4 py-2 bg-white rounded-full text-[10px] font-bold uppercase tracking-widest text-emerald-900 shadow-sm border border-emerald-900/5">
+                              <span key={i} className="px-3 py-1.5 sm:px-4 sm:py-2 bg-white rounded-full text-[10px] font-bold uppercase tracking-widest text-emerald-900 shadow-sm border border-emerald-900/5">
                                 {hlt}
                               </span>
                             ))}
@@ -498,14 +574,14 @@ export default function App() {
                     {/* Pacotes */}
                     {activeService.packages && (
                       <div>
-                        <h3 className="text-3xl font-serif mb-8">Nossos Pacotes</h3>
+                        <h3 className="text-2xl sm:text-3xl font-serif mb-6 sm:mb-8">Nossos Pacotes</h3>
                         <div className="grid gap-4">
                           {activeService.packages.map((pkg: any, i: number) => (
-                            <div key={i} className="p-6 md:p-8 bg-white border border-stone-100 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
-                              <h4 className="text-xl font-bold mb-4 text-emerald-950">{pkg.name}</h4>
-                              <ul className="space-y-3">
+                            <div key={i} className="p-5 sm:p-6 md:p-8 bg-white border border-stone-100 rounded-2xl sm:rounded-3xl shadow-sm hover:shadow-md transition-shadow">
+                              <h4 className="text-lg sm:text-xl font-bold mb-4 text-emerald-950">{pkg.name}</h4>
+                              <ul className="space-y-2 sm:space-y-3">
                                 {pkg.details.map((detail: string, j: number) => (
-                                  <li key={j} className="flex items-start gap-3 opacity-70 text-sm">
+                                  <li key={j} className="flex items-start gap-2.5 sm:gap-3 opacity-70 text-xs sm:text-sm">
                                     <CheckCircle2 size={16} className="text-emerald-600 shrink-0 mt-0.5" />
                                     <span>{detail}</span>
                                   </li>
@@ -520,12 +596,12 @@ export default function App() {
                     {/* Serviços Adicionais */}
                     {activeService.extraServices && (
                       <div>
-                        <h3 className="text-2xl font-serif mb-6">{activeService.extraServices.title}</h3>
-                        <div className="grid gap-4">
+                        <h3 className="text-xl sm:text-2xl font-serif mb-6">{activeService.extraServices.title}</h3>
+                        <div className="grid gap-3 sm:gap-4">
                           {activeService.extraServices.items.map((item: any, i: number) => (
-                            <div key={i} className="p-5 bg-stone-50 rounded-2xl">
-                              <h4 className="font-bold text-stone-900 mb-1">{item.name}</h4>
-                              <p className="text-sm opacity-60">{item.detail}</p>
+                            <div key={i} className="p-4 sm:p-5 bg-stone-50 rounded-xl sm:rounded-2xl">
+                              <h4 className="font-bold text-stone-900 text-sm sm:text-base mb-1">{item.name}</h4>
+                              <p className="text-xs sm:text-sm opacity-60">{item.detail}</p>
                             </div>
                           ))}
                         </div>
@@ -535,12 +611,12 @@ export default function App() {
                     {/* FAQ */}
                     {activeService.faq && (
                       <div>
-                        <h3 className="text-2xl font-serif mb-6">Dúvidas Frequentes</h3>
-                        <div className="space-y-4">
+                        <h3 className="text-xl sm:text-2xl font-serif mb-6">Dúvidas Frequentes</h3>
+                        <div className="space-y-3 sm:space-y-4">
                           {activeService.faq.map((item: any, i: number) => (
-                            <div key={i} className="p-6 border border-stone-200 rounded-3xl">
-                               <p className="font-bold mb-2 text-stone-900">{item.q}</p>
-                               <p className="opacity-60 text-sm leading-relaxed">{item.a}</p>
+                            <div key={i} className="p-5 sm:p-6 border border-stone-200 rounded-2xl sm:rounded-3xl">
+                               <p className="font-bold text-sm sm:text-base mb-2 text-stone-900">{item.q}</p>
+                               <p className="opacity-60 text-xs sm:text-sm leading-relaxed">{item.a}</p>
                             </div>
                           ))}
                         </div>
@@ -549,10 +625,10 @@ export default function App() {
 
                   </div>
 
-                  {/* Coluna 2: Carrossel (Fixo na tela enquanto rola os pacotes) */}
+                  {/* Coluna 2: Carrossel */}
                   {activeService.images && activeService.images.length > 0 && (
-                    <div className="lg:sticky top-8 space-y-4">
-                      <div className="relative rounded-[40px] overflow-hidden bg-stone-100 aspect-[4/5] shadow-xl">
+                    <div className="lg:sticky top-8 space-y-4 order-1 lg:order-2">
+                      <div className="relative rounded-[28px] sm:rounded-[40px] overflow-hidden bg-stone-100 aspect-[4/5] shadow-xl">
                         <AnimatePresence mode="wait">
                           <motion.img
                             key={carouselIndex}
@@ -576,27 +652,27 @@ export default function App() {
                                   (prev - 1 + activeService.images.length) % activeService.images.length
                                 )
                               }
-                              className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/80 backdrop-blur-md flex items-center justify-center hover:bg-white transition-colors shadow-lg"
+                              className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/80 backdrop-blur-md flex items-center justify-center hover:bg-white transition-colors shadow-lg"
                             >
-                              <ChevronLeft className="text-stone-900" />
+                              <ChevronLeft className="text-stone-900 w-5 h-5 sm:w-6 sm:h-6" />
                             </button>
 
                             <button
                               onClick={() =>
                                 setCarouselIndex((prev: number) => (prev + 1) % activeService.images.length)
                               }
-                              className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/80 backdrop-blur-md flex items-center justify-center hover:bg-white transition-colors shadow-lg"
+                              className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/80 backdrop-blur-md flex items-center justify-center hover:bg-white transition-colors shadow-lg"
                             >
-                              <ChevronRight className="text-stone-900" />
+                              <ChevronRight className="text-stone-900 w-5 h-5 sm:w-6 sm:h-6" />
                             </button>
 
-                            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
+                            <div className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 flex gap-1.5 sm:gap-2">
                               {activeService.images.map((_: string, i: number) => (
                                 <button
                                   key={i}
                                   onClick={() => setCarouselIndex(i)}
-                                  className={`h-2 rounded-full transition-all shadow-sm ${
-                                    i === carouselIndex ? 'w-8 bg-white' : 'w-2 bg-white/60 hover:bg-white'
+                                  className={`h-1.5 sm:h-2 rounded-full transition-all shadow-sm ${
+                                    i === carouselIndex ? 'w-6 sm:w-8 bg-white' : 'w-1.5 sm:w-2 bg-white/60 hover:bg-white'
                                   }`}
                                 />
                               ))}
@@ -607,12 +683,12 @@ export default function App() {
 
                       {/* Miniaturas do Carrossel */}
                       {activeService.images.length > 1 && (
-                        <div className="flex gap-3 overflow-x-auto pb-4 pt-2 snap-x">
+                        <div className="flex gap-2 sm:gap-3 overflow-x-auto pb-4 pt-2 snap-x">
                           {activeService.images.map((img: string, i: number) => (
                             <button
                               key={i}
                               onClick={() => setCarouselIndex(i)}
-                              className={`shrink-0 w-24 h-24 rounded-2xl overflow-hidden border-2 transition-all snap-start ${
+                              className={`shrink-0 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-xl sm:rounded-2xl overflow-hidden border-2 transition-all snap-start ${
                                 i === carouselIndex ? 'border-emerald-900 scale-95 shadow-md' : 'border-transparent opacity-50 hover:opacity-100'
                               }`}
                             >
@@ -626,18 +702,18 @@ export default function App() {
                 </div>
 
                 {/* Chamada para Ação no Final do Modal */}
-                <div className="p-12 md:p-20 bg-emerald-950 text-white rounded-[60px] text-center space-y-8 relative overflow-hidden">
+                <div className="p-8 sm:p-12 md:p-20 bg-emerald-950 text-white rounded-[32px] sm:rounded-[60px] text-center space-y-6 sm:space-y-8 relative overflow-hidden">
                    <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 blur-[100px] rounded-full" />
-                   <h4 className="text-3xl md:text-5xl font-serif leading-tight">Vamos eternizar<br/> esse momento?</h4>
-                   <p className="opacity-60 max-w-md mx-auto font-light">Cada clique é único e cheio de significado. Agende sua data hoje mesmo.</p>
-                   <div className="pt-4">
+                   <h4 className="text-2xl sm:text-3xl md:text-5xl font-serif leading-tight">Vamos eternizar<br/> esse momento?</h4>
+                   <p className="opacity-60 max-w-md mx-auto font-light text-sm sm:text-base">Cada clique é único e cheio de significado. Agende sua data hoje mesmo.</p>
+                   <div className="pt-2 sm:pt-4">
                       <a 
                         href={`https://wa.me/${activeService.whatsapp || '5547991322923'}`}
                         target="_blank"
                         rel="noreferrer"
-                        className="px-12 py-6 rounded-3xl bg-white text-emerald-950 font-bold text-xl inline-flex items-center gap-4 hover:scale-105 active:scale-95 transition-transform"
+                        className="w-full sm:w-auto px-6 py-4 sm:px-12 sm:py-6 rounded-2xl sm:rounded-3xl bg-white text-emerald-950 font-bold text-base sm:text-xl inline-flex items-center justify-center gap-3 sm:gap-4 hover:scale-105 active:scale-95 transition-transform"
                       >
-                         Reserve sua data prevista <MessageCircle size={24} />
+                         Reserve sua data prevista <MessageCircle size={22} className="shrink-0" />
                       </a>
                    </div>
                 </div>
@@ -659,9 +735,9 @@ export default function App() {
           >
             <button 
               onClick={() => setFotoAmpliada(null)}
-              className="absolute top-6 right-6 text-white/50 hover:text-white transition-colors z-10"
+              className="absolute top-4 right-4 sm:top-6 sm:right-6 text-white/50 hover:text-white transition-colors z-10"
             >
-              <X size={40} />
+              <X size={36} />
             </button>
             <motion.img 
               initial={{ scale: 0.9, opacity: 0 }}
@@ -670,17 +746,17 @@ export default function App() {
               transition={{ type: "spring", damping: 25, stiffness: 200 }}
               src={fotoAmpliada} 
               alt="Foto Ampliada" 
-              className="max-w-full max-h-[90vh] object-contain rounded-xl shadow-2xl"
+              className="max-w-full max-h-[85vh] sm:max-h-[90vh] object-contain rounded-xl shadow-2xl"
               onClick={(e) => e.stopPropagation()} 
             />
           </motion.div>
         )}
       </AnimatePresence>
 
-      <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${scrolled ? 'glass py-3 shadow-xl shadow-black/5' : 'bg-transparent py-6'}`}>
-        <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${scrolled ? 'glass py-2 sm:py-3 shadow-xl shadow-black/5' : 'bg-transparent py-4 sm:py-6'}`}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
           <div className="flex items-center gap-4 group cursor-pointer text-stone-900">
-            <div className="h-16 w-auto min-w-[180px] rounded-xl overflow-hidden transition-all group-hover:scale-105 flex items-center justify-center p-2 bg-white/40 backdrop-blur-sm">
+            <div className="h-12 sm:h-16 md:h-20 w-auto min-w-[130px] sm:min-w-[180px] md:min-w-[220px] max-w-[160px] sm:max-w-none rounded-xl overflow-hidden transition-all group-hover:scale-105 flex items-center justify-center p-1.5 sm:p-2 bg-white/40 backdrop-blur-sm">
               <img src="/logo.png" alt="Ver Crescer Logo" className="h-full w-auto object-contain" referrerPolicy="no-referrer" onError={(e) => { const target = e.target as HTMLImageElement; target.src = "/api/artifacts/a-0"; }}/>
             </div>
           </div>
@@ -691,89 +767,61 @@ export default function App() {
             <a href="https://www.instagram.com/vercrescerfotografia/" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full hover:bg-emerald-50 transition-colors text-stone-900 opacity-60 hover:opacity-100"><Instagram size={20} /></a>
             <a href="https://wa.me/5547991322923" target="_blank" rel="noreferrer" className="px-6 py-2.5 rounded-full bg-emerald-900 text-white text-sm font-bold shadow-xl hover:bg-emerald-800 transition-all transform active:scale-95">Agendar Ensaio</a>
           </div>
-          <button className="md:hidden text-stone-900" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
+          <button className="md:hidden text-stone-900 p-2" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            {isMenuOpen ? <X size={26} /> : <Menu size={26} />}
           </button>
         </div>
         {isMenuOpen && (
-          <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} className="md:hidden glass border-t border-black/5 px-6 py-8 flex flex-col gap-6 text-stone-900">
+          <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} className="md:hidden glass border-t border-black/5 px-6 py-6 flex flex-col gap-5 text-stone-900 shadow-2xl">
             {['Estúdio', 'Depoimentos', 'Contato'].map((item) => (
               <a key={item} href={`#${item.toLowerCase()}`} className="text-lg font-medium" onClick={() => setIsMenuOpen(false)}>{item}</a>
             ))}
-            <div className="flex items-center gap-6 py-2">
-              <a href="https://www.instagram.com/vercrescerfotografia/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-stone-900 font-medium"><Instagram size={24} /><span>Instagram</span></a>
+            <div className="flex items-center gap-6 py-2 border-t border-black/5">
+              <a href="https://www.instagram.com/vercrescerfotografia/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-stone-900 font-medium"><Instagram size={20} /><span>Instagram</span></a>
             </div>
-            <a href="https://wa.me/5547991322923" target="_blank" rel="noreferrer" className="w-full py-4 rounded-2xl bg-emerald-900 text-white font-bold text-center active:scale-95">Agendar Ensaio</a>
+            <a href="https://wa.me/5547991322923" target="_blank" rel="noreferrer" className="w-full py-4 rounded-2xl bg-emerald-900 text-white font-bold text-center active:scale-95 shadow-md">Agendar Ensaio</a>
           </motion.div>
         )}
       </nav>
 
-      <section className="relative pt-48 pb-32 px-6 overflow-hidden">
+      <section className="relative pt-32 sm:pt-40 md:pt-48 pb-16 sm:pb-24 md:pb-32 px-4 sm:px-6 overflow-hidden">
         <div className="max-w-7xl mx-auto text-center relative z-10 text-stone-900">
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-black/5 bg-black/5 backdrop-blur-md text-[10px] font-bold tracking-[0.2em] uppercase mb-10 text-stone-600"><Sparkles size={12} /> Eternizando Momentos Especiais</motion.div>
-          <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }} className="text-6xl md:text-9xl font-serif tracking-tighter mb-10 leading-[0.9] text-stone-900">Cada momento, <br /> <span className="italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-stone-900 via-stone-500 to-stone-900">uma história.</span></motion.h1>
-          <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.2 }} className="max-w-2xl mx-auto text-lg md:text-xl opacity-60 font-light mb-14 leading-relaxed tracking-tight">No Estúdio VerCrescer, entregamos dedicação em cada clique. Capturamos a essência da sua família e a força da sua marca.</motion.p>
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.4 }} className="flex flex-col sm:flex-row justify-center gap-5">
-            <a href="https://wa.me/5547991322923" target="_blank" rel="noreferrer" className="group px-12 py-6 rounded-2xl bg-emerald-900 text-white font-bold flex items-center justify-center gap-4 hover:translate-y-[-2px] hover:shadow-2xl hover:shadow-emerald-900/20 transition-all text-xl active:scale-95">Falar no WhatsApp <MessageCircle size={24} className="transition-transform group-hover:scale-110" /></a>
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full border border-black/5 bg-black/5 backdrop-blur-md text-[9px] sm:text-[10px] font-bold tracking-[0.15em] sm:tracking-[0.2em] uppercase mb-6 sm:mb-10 text-stone-600"><Sparkles size={12} /> Eternizando Momentos Especiais</motion.div>
+          <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }} className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-serif tracking-tighter mb-6 md:mb-10 leading-[0.9] text-stone-900">Cada momento, <br /> <span className="italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-stone-900 via-stone-500 to-stone-900">uma história.</span></motion.h1>
+          <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.2 }} className="max-w-2xl mx-auto text-base sm:text-lg md:text-xl opacity-60 font-light mb-10 sm:mb-14 leading-relaxed tracking-tight px-2">No Estúdio VerCrescer, entregamos dedicação em cada clique. Capturamos a essência da sua família e a força da sua marca.</motion.p>
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.4 }} className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-5 px-4 sm:px-0">
+            <a href="https://wa.me/5547991322923" target="_blank" rel="noreferrer" className="group w-full sm:w-auto px-8 py-5 sm:px-12 sm:py-6 rounded-2xl bg-emerald-900 text-white font-bold flex items-center justify-center gap-3 sm:gap-4 hover:translate-y-[-2px] hover:shadow-2xl hover:shadow-emerald-900/20 transition-all text-lg sm:text-xl active:scale-95">Falar no WhatsApp <MessageCircle size={22} className="transition-transform group-hover:scale-110 shrink-0" /></a>
           </motion.div>
         </div>
       </section>
 
-      <a href="https://wa.me/5547991322923" target="_blank" rel="noreferrer" className="fixed bottom-8 right-8 z-[90] w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all animate-bounce-slow" aria-label="Contact on WhatsApp"><MessageCircle size={32} fill="currentColor" /></a>
+      <a href="https://wa.me/5547991322923" target="_blank" rel="noreferrer" className="fixed bottom-4 right-4 sm:bottom-8 sm:right-8 z-[90] w-14 h-14 sm:w-16 sm:h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all animate-bounce-slow" aria-label="Contact on WhatsApp"><MessageCircle size={28} className="sm:w-8 sm:h-8" fill="currentColor" /></a>
 
-      <section className="py-10 border-y border-emerald-900/5 overflow-hidden whitespace-nowrap bg-emerald-50/30">
-        <div className="flex animate-scroll gap-20">
+      <section className="py-8 sm:py-10 border-y border-emerald-900/5 overflow-hidden whitespace-nowrap bg-emerald-50/30">
+        <div className="flex animate-scroll gap-12 sm:gap-20">
           {[...services, ...services].map((s, i) => (
-            <div key={i} className="flex items-center gap-3 opacity-30 hover:opacity-100 transition-opacity cursor-default text-stone-900">
+            <div key={i} className="flex items-center gap-2.5 sm:gap-3 opacity-30 hover:opacity-100 transition-opacity cursor-default text-stone-900">
               <span className="text-stone-600">{s.icon}</span>
-              <span className="text-sm font-bold tracking-[0.1em] uppercase">{s.title}</span>
+              <span className="text-xs sm:text-sm font-bold tracking-[0.1em] uppercase">{s.title}</span>
             </div>
           ))}
         </div>
       </section>
 
-      {/*<section id="sobre" className="py-32 px-6">
+      <section id="estúdio" className="py-16 sm:py-24 md:py-32 px-4 sm:px-6 bg-emerald-50/50">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
-            <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="space-y-8">
-              <div className="inline-block px-4 py-1.5 rounded-full bg-emerald-50 text-[10px] font-bold tracking-widest uppercase text-emerald-700/70">Quem Somos</div>
-              <h2 className="text-4xl md:text-6xl font-serif leading-[1.1]">Equipe apaixonada por <span className="italic font-normal">maternar.</span></h2>
-              <p className="text-lg opacity-60 font-light max-w-xl">Olá, somos a Ver Crescer Fotografia! Nossa equipe é formada pelas fotógrafas <strong> Thamiris e Nanda</strong>. Somos especialistas em nascimentos, com formação como doulas e consultoras de aleitamento materno.</p>
-              <div className="grid grid-cols-2 gap-8 py-8 border-y border-stone-100">
-                <div><p className="text-3xl font-serif mb-1">2.3k+</p><p className="text-[10px] font-bold uppercase opacity-40 tracking-widest">Vidas Fotografadas</p></div>
-                <div><p className="text-3xl font-serif mb-1">Intl.</p><p className="text-[10px] font-bold uppercase opacity-40 tracking-widest">Premiadas Mundialmente</p></div>
-              </div>
-              <p className="opacity-50 text-sm italic">"Nos dedicamos de coração buscando sempre evoluirmos para oferecer a excelência nesses momentos divinos, sempre com extrema humanização e respeito."</p>
-            </motion.div>
-            <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="grid grid-cols-2 md:grid-cols-3 gap-4">
-              <div className="space-y-4 pt-12">
-                <div className="aspect-[3/4] rounded-3xl overflow-hidden glass border-stone-200"><img src={equipe1} referrerPolicy="no-referrer" className="w-full h-full object-cover hover:scale-105 transition-all duration-700" alt="Nanda e Thamiris" /></div>
-                <div className="aspect-square rounded-3xl overflow-hidden glass border-stone-200"><img src={equipe2} referrerPolicy="no-referrer" className="w-full h-full object-cover hover:scale-105 transition-all duration-700" alt="Nanda e Thamiris" /></div>
-              </div>
-              <div className="space-y-4">
-                <div className="aspect-square rounded-3xl overflow-hidden glass border-stone-200"><img src={equipe3} referrerPolicy="no-referrer" className="w-full h-full object-cover hover:scale-105 transition-all duration-700" alt="Nanda e Thamiris" /></div>
-                <div className="aspect-[3/4] rounded-3xl overflow-hidden glass border-stone-200 shadow-2xl"><img src={equipe4} referrerPolicy="no-referrer" className="w-full h-full object-cover hover:scale-110 transition-all duration-700" alt="Nanda e Thamiris" /></div>
-              </div>
-              <div className="hidden md:block space-y-4 pt-8">
-                <div className="aspect-[3/4] rounded-3xl overflow-hidden glass border-stone-200"><img src={equipe5} referrerPolicy="no-referrer" className="w-full h-full object-cover hover:scale-105 transition-all duration-700" alt="Nanda e Thamiris" /></div>
-              </div>
-            </motion.div>
+          <div className="text-center mb-12 sm:mb-20 md:mb-24 max-w-2xl mx-auto">
+            <h2 className="text-3xl sm:text-5xl md:text-7xl font-serif mb-4 sm:mb-8 tracking-tighter">Nossas Especialidades</h2>
+            <p className="opacity-60 text-base sm:text-lg font-light px-2">Desde o primeiro batimento até o primeiro aninho, cada fase merece um olhar único.</p>
           </div>
-        </div>
-      </section>*/}
-
-      <section id="estúdio" className="py-32 px-6 bg-emerald-50/50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-24 max-w-2xl mx-auto">
-            <h2 className="text-4xl md:text-7xl font-serif mb-8 tracking-tighter">Nossas Especialidades</h2>
-            <p className="opacity-60 text-lg font-light">Desde o primeiro batimento até o primeiro aninho, cada fase merece um olhar único.</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {services.map((service, idx) => (
-              <motion.div key={idx} whileHover={{ y: -5 }} onClick={() => setActiveService(service)} className="p-8 rounded-[32px] bg-white border border-black/5 shadow-sm transition-all group cursor-pointer hover:shadow-xl hover:border-stone-200">
-                <div className="w-12 h-12 rounded-2xl bg-emerald-100/50 flex items-center justify-center mb-6 text-emerald-700/50 group-hover:bg-emerald-900 group-hover:text-white transition-all">{service.icon}</div>
-                <h3 className="text-xl font-bold mb-4 tracking-tight">{service.title}</h3>
-                <p className="opacity-50 text-sm leading-relaxed mb-8">{service.desc}</p>
+              <motion.div key={idx} whileHover={{ y: -5 }} onClick={() => setActiveService(service)} className="p-6 sm:p-8 rounded-[24px] sm:rounded-[32px] bg-white border border-black/5 shadow-sm transition-all group cursor-pointer hover:shadow-xl hover:border-stone-200 flex flex-col justify-between">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-emerald-100/50 flex items-center justify-center mb-6 text-emerald-700/50 group-hover:bg-emerald-900 group-hover:text-white transition-all">{service.icon}</div>
+                  <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 tracking-tight">{service.title}</h3>
+                  <p className="opacity-50 text-xs sm:text-sm leading-relaxed mb-6 sm:mb-8">{service.desc}</p>
+                </div>
                 <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-emerald-900/40 group-hover:text-emerald-900 transition-all">Ver Detalhes <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" /></div>
               </motion.div>
             ))}
@@ -781,58 +829,60 @@ export default function App() {
         </div>
       </section>
 
-      <section id="depoimentos" className="py-32 px-6 bg-white">
+      <section id="depoimentos" className="py-16 sm:py-24 md:py-32 px-4 sm:px-6 bg-white">
         <div className="max-w-7xl mx-auto text-stone-900">
-          <h2 className="text-4xl md:text-6xl font-serif mb-20 text-center tracking-tighter">O que dizem sobre nós</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-serif mb-12 sm:mb-20 text-center tracking-tighter">O que dizem sobre nós</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             {[
               { name: "Raquel", role: "", text: "Nossa experiência com a Ver Crescer tem sido especial desde os primeiros meses da Analua. Cada mesversário e ensaio foi marcado por fotinhos muito lindas e do jeitinho que sempre sonhamos, com um cenário mais clean, a nossa cara. Sempre nos sentimos acolhidos pela equipe, que tem uma sensibilidade incrível para lidar com os bebês e transformar cada fase em uma lembrança única. Muito obrigada sempre por toda atenção com a nossa família." },
               { name: "Fernanda", role: "", text: "Aproveitando o oportunidade, queria te agradecer mais uma vez por tudo, cada palavra, cada massagem, cada conselho, você estava ali com a gente 1000%, se doou totalmente pra viver aquele momento… você foi além do profissional, super humana, atenciosa, preocupada o tempo todo com a gente, com nosso bem estar, foi muito além da fotografia! Que Deus abençoe sempre sua vida, você é maravilhosaaaaaaaa, e vou eternamente grata" },
               { name: "Bianca", role: "", text: "Antes de fazer meu primeiro ensaio, eu achava que era só sobre ter fotos bonitas. Hoje, vejo que é sobre guardar fases da vida que nunca mais voltam… Depois que tive minhas filhas, isso fez ainda mais sentido para mim, o parto foi um dos dias mais marcantes da minha vida e, no meio de tantas emoções, existem detalhes que a gente acaba nem conseguindo absorver e poder olhar as fotos/videos e reviver aquele momento é algo que eu nunca imaginei que teria tanto valor. Lembro até hoje do meu nervosismo naquela madrugada do parto e foi a primeira vez que eu vi a Thami, nem se conhecíamos e ela foi a pessoa mais importante naquele momento, que esteve comigo todo tempo e me acalmou até mais que o médico e enfermeiras kkkk, nunca vou esquecer disso e de tudo oq ela fez por nós. Existem momentos que passam em questão de horas mas mudam a nossa vida pra sempre, ter tudo registrado me permite reviver cada detalhe que eu jamais conseguiria lembrar com a mesma intensidade… Sem contar que hoje posso mostrar todos os registros pras minhas filhas que ficam encantadas vendo elas nascendo, nos ensaios bebezinhas, aniversários… a Ver Crescer faz parte da nossa vida, dos momentos mais lindos e inesquecíveis que já vivemos, sou muuito grata por isso! confesso que fico ansiosa pra engravidar novamente e poder reviver todos esses registros com vocês. Vocês já são nossa família e eu jamais trocaria o trabalho impecável de vocês que sempre me entregaram além e com tanta excelência, quero que acompanhem todas as fases porque esses momentos passam muito rápido mas essas memórias registradas ficam pra sempre!" }
             ].map((dep, i) => (
-              <div key={i} className="bg-emerald-50/30 p-10 rounded-[32px] border border-emerald-900/5 relative shadow-sm">
-                <div className="flex gap-1 text-emerald-600 mb-6">{[...Array(5)].map((_, i) => <Star key={i} size={16} fill="currentColor" />)}</div>
-                <p className="italic opacity-70 text-lg mb-8 leading-relaxed">"{dep.text}"</p>
-                <div><p className="font-bold">{dep.name}</p><p className="text-xs font-bold uppercase opacity-40 tracking-widest leading-none mt-1">{dep.role}</p></div>
+              <div key={i} className="bg-emerald-50/30 p-6 sm:p-8 md:p-10 rounded-[24px] sm:rounded-[32px] border border-emerald-900/5 relative shadow-sm flex flex-col justify-between">
+                <div>
+                  <div className="flex gap-1 text-emerald-600 mb-4 sm:mb-6">{[...Array(5)].map((_, i) => <Star key={i} size={16} fill="currentColor" />)}</div>
+                  <p className="italic opacity-70 text-sm sm:text-base md:text-lg mb-6 sm:mb-8 leading-relaxed">"{dep.text}"</p>
+                </div>
+                <div><p className="font-bold text-base sm:text-lg">{dep.name}</p><p className="text-[10px] sm:text-xs font-bold uppercase opacity-40 tracking-widest leading-none mt-1">{dep.role}</p></div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="contato" className="py-32 px-6 mb-20">
-        <div className="max-w-5xl mx-auto bg-emerald-950 text-white rounded-[60px] p-12 md:p-24 text-center relative overflow-hidden shadow-2xl">
+      <section id="contato" className="py-16 sm:py-24 md:py-32 px-4 sm:px-6 mb-10 sm:mb-20">
+        <div className="max-w-5xl mx-auto bg-emerald-950 text-white rounded-[32px] sm:rounded-[48px] md:rounded-[60px] p-8 sm:p-14 md:p-24 text-center relative overflow-hidden shadow-2xl">
           <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 blur-[100px] -z-10 rounded-full" />
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 blur-[100px] -z-10 rounded-full" />
-          <h2 className="text-5xl md:text-7xl font-serif mb-8 tracking-tighter">Vamos conversar?</h2>
-          <p className="max-w-xl mx-auto text-xl opacity-70 mb-12 font-light">Todo grande momento merece ser registrado com perfeição. Clique abaixo e tire suas dúvidas.</p>
+          <h2 className="text-3xl sm:text-5xl md:text-7xl font-serif mb-4 sm:mb-8 tracking-tighter">Vamos conversar?</h2>
+          <p className="max-w-xl mx-auto text-base sm:text-lg md:text-xl opacity-70 mb-8 sm:mb-12 font-light px-2">Todo grande momento merece ser registrado com perfeição. Clique abaixo e tire suas dúvidas.</p>
           <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-            <a href="https://wa.me/5547991322923" className="w-full md:w-auto px-12 py-6 rounded-3xl bg-white text-emerald-950 hover:bg-emerald-50 font-bold text-xl flex items-center justify-center gap-4 transition-all shadow-2xl hover:scale-105 active:scale-95"><MessageCircle size={28} /> Fale com a Maria</a>
+            <a href="https://wa.me/5547991322923" className="w-full md:w-auto px-8 py-5 sm:px-12 sm:py-6 rounded-2xl sm:rounded-3xl bg-white text-emerald-950 hover:bg-emerald-50 font-bold text-lg sm:text-xl flex items-center justify-center gap-3 sm:gap-4 transition-all shadow-2xl hover:scale-105 active:scale-95"><MessageCircle size={24} className="shrink-0" /> Fale com a Maria</a>
             <div className="flex flex-col items-center gap-1 opacity-60">
-               <div className="flex items-center gap-2 text-sm font-bold tracking-widest uppercase"><MapPin size={18} /> Balneário Camboriú, SC</div>
+               <div className="flex items-center gap-2 text-xs sm:text-sm font-bold tracking-widest uppercase"><MapPin size={16} className="shrink-0" /> Balneário Camboriú, SC</div>
                <p className="text-[10px] font-bold tracking-tighter opacity-100">Trade Park | Sala 204 | KM 131</p>
             </div>
           </div>
         </div>
       </section>
 
-      <footer className="py-20 px-6 border-t border-emerald-900/5 bg-[#f5fbf5]">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12 text-center md:text-left text-stone-900">
-          <div className="flex flex-col gap-4">
+      <footer className="py-12 sm:py-20 px-4 sm:px-6 border-t border-emerald-900/5 bg-[#f5fbf5]">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 sm:gap-12 text-center md:text-left text-stone-900">
+          <div className="flex flex-col gap-4 items-center md:items-start">
             <div className="flex items-center gap-4 justify-center md:justify-start group cursor-pointer">
-              <div className="h-16 w-auto min-w-[180px] rounded-xl overflow-hidden transition-all group-hover:scale-105 flex items-center justify-center p-2 bg-white/40 backdrop-blur-sm">
+              <div className="h-14 sm:h-16 w-auto min-w-[140px] sm:min-w-[180px] rounded-lg overflow-hidden bg-white/40 flex items-center justify-center p-1.5 sm:p-2 transition-transform group-hover:scale-105">
                 <img src="/logo.png" alt="Logo" className="h-full w-auto object-contain" referrerPolicy="no-referrer" onError={(e) => { const target = e.target as HTMLImageElement; target.src = "/api/artifacts/a-0"; }}/>
               </div>
             </div>
             <p className="text-xs opacity-50 max-w-xs font-light leading-relaxed">Eternizando momentos no Estúdio ou em Maternidades de Blumenau, Brusque, Itajaí e Balneário Camboriú.</p>
           </div>
-          <div className="flex gap-10 text-[10px] font-bold tracking-[0.3em] uppercase opacity-40">
-            <a href="https://www.instagram.com/vercrescerfotografia/" target="_blank" rel="noopener noreferrer" className="hover:text-stone-900 transition-colors flex items-center gap-2"><Instagram className="w-3 h-3" /> Instagram</a>
+          <div className="flex flex-wrap justify-center gap-6 sm:gap-10 text-[10px] font-bold tracking-[0.2em] sm:tracking-[0.3em] uppercase opacity-40">
+            <a href="https://www.instagram.com/vercrescerfotografia/" target="_blank" rel="noopener noreferrer" className="hover:text-stone-900 transition-colors flex items-center gap-2"><Instagram className="w-3 h-3 shrink-0" /> Instagram</a>
             <a href="mailto:vercrescerfotografia@gmail.com" className="hover:text-stone-900 transition-colors uppercase">E-mail</a>
           </div>
           <div className="text-center md:text-right">
-            <p className="text-[10px] font-bold opacity-30 tracking-[0.3em] uppercase mb-1">© 2026 VERCRESCER FOTOGRAFIAS</p>
-            <p className="text-[10px] font-mono opacity-10">DISPONÍVEL 24H PARA EMERGÊNCIAS</p>
+            <p className="text-[10px] font-bold opacity-30 tracking-[0.2em] sm:tracking-[0.3em] uppercase mb-1">© 2026 VERCRESCER FOTOGRAFIAS</p>
+            <p className="text-[9px] sm:text-[10px] font-mono opacity-10">DISPONÍVEL 24H PARA EMERGÊNCIAS</p>
           </div>
         </div>
       </footer>
