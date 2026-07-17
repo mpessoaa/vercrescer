@@ -98,9 +98,6 @@ import eventos14 from './assets/images/eventos14.jpeg';
 import eventos15 from './assets/images/eventos15.jpeg';
 import eventos16 from './assets/images/eventos16.jpeg';
 
-import fotoFernanda from './assets/images/fernanda.png';
-import fotoTamires from './assets/images/tamires.png';
-
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
