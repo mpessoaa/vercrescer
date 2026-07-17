@@ -626,6 +626,7 @@ export default function App() {
                             key={carouselIndex}
                             src={activeService.images[carouselIndex]}
                             referrerPolicy="no-referrer"
+                            loading="lazy"
                             alt={`${activeService.title} - foto ${carouselIndex + 1}`}
                             initial={{ opacity: 0, scale: 1.05 }}
                             animate={{ opacity: 1, scale: 1 }}
