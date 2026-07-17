@@ -222,7 +222,6 @@ export default function App() {
         parto3,
         parto4,
         parto5,
-        gestante1,
         gestante2,
         equipe1,
         equipe2,
@@ -627,6 +626,7 @@ export default function App() {
                             key={carouselIndex}
                             src={activeService.images[carouselIndex]}
                             referrerPolicy="no-referrer"
+                            loading="lazy"
                             alt={`${activeService.title} - foto ${carouselIndex + 1}`}
                             initial={{ opacity: 0, scale: 1.05 }}
                             animate={{ opacity: 1, scale: 1 }}
@@ -685,7 +685,7 @@ export default function App() {
                                 i === carouselIndex ? 'border-emerald-900 scale-95 shadow-md' : 'border-transparent opacity-50 hover:opacity-100'
                               }`}
                             >
-                              <img src={img} referrerPolicy="no-referrer" className="w-full h-full object-cover" alt="" />
+                              <img src={img} referrerPolicy="no-referrer" loading="lazy" className="w-full h-full object-cover" alt="" />
                             </button>
                           ))}
                         </div>
@@ -864,7 +864,7 @@ export default function App() {
           <div className="flex flex-col gap-4 items-center md:items-start w-full md:w-auto">
             <div className="flex items-center gap-4 justify-center md:justify-start group cursor-pointer w-full md:w-auto">
               <div className="h-14 sm:h-16 w-auto min-w-[140px] sm:min-w-[180px] rounded-lg overflow-hidden bg-white/40 flex items-center justify-center p-1.5 sm:p-2 transition-transform group-hover:scale-105">
-                <img src="/logo.png" alt="Logo" className="h-full w-auto object-contain" referrerPolicy="no-referrer" onError={(e) => { const target = e.target as HTMLImageElement; target.src = "/api/artifacts/a-0"; }}/>
+                <img src="/logo.png" alt="Logo" className="h-full w-auto object-contain" />
               </div>
             </div>
             <p className="text-xs opacity-50 max-w-xs font-light leading-relaxed break-words w-full">Eternizando momentos no Estúdio ou em Maternidades de Blumenau, Brusque, Itajaí e Balneário Camboriú.</p>
