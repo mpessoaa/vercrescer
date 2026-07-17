@@ -62,8 +62,7 @@ import new15 from './assets/images/new15.jpeg';
 import new16 from './assets/images/new16.jpeg';
 
 import acom1 from './assets/images/acom1.png';
-import acom2 from './assets/images/acom2.png';
-import acom3 from './assets/images/acom3.png';
+
 
 import acom5 from './assets/images/acom5.png';
 import acom6 from './assets/images/acom6.png';
@@ -305,7 +304,6 @@ export default function App() {
       },
       images: [
         acom1
-        
       ]
     },
     { 
