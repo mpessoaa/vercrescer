@@ -204,7 +204,6 @@ export default function App() {
         parto3,
         parto4,
         parto5,
-        gestante2,
         equipe1,
         equipe2,
         equipe3,
