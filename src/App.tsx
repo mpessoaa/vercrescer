@@ -670,21 +670,23 @@ export default function App() {
                       {/* Miniaturas do Carrossel */}
                       {activeService.images.length > 1 && (
                         <div className="flex gap-2 sm:gap-3 overflow-x-auto pb-4 pt-2 snap-x w-full custom-scrollbar">
-                          {activeService.images.map((img: string, i: number) => (
+                          {activeService.images.map((media: string, i: number) => (
                             <button
                               key={i}
                               onClick={() => setCarouselIndex(i)}
-                              className={`shrink-0 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-xl sm:rounded-2xl overflow-hidden border-2 transition-all snap-start ${
+                              className={`relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-xl sm:rounded-2xl overflow-hidden border-2 transition-all snap-start ${
                                 i === carouselIndex ? 'border-emerald-900 scale-95 shadow-md' : 'border-transparent opacity-50 hover:opacity-100'
                               }`}
                             >
-                              <img src={img} referrerPolicy="no-referrer" loading="lazy" className="w-full h-full object-cover" alt="" />
+                              {media.endsWith('.mp4') ? (
+                                <video src={media} className="w-full h-full object-cover pointer-events-none" muted playsInline />
+                              ) : (
+                                <img src={media} referrerPolicy="no-referrer" loading="lazy" className="w-full h-full object-cover pointer-events-none" alt="" />
+                              )}
                             </button>
                           ))}
                         </div>
                       )}
-                    </div>
-                  )}
                 </div>
 
                 {/* Chamada para Ação no Final do Modal */}
