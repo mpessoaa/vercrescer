@@ -21,10 +21,6 @@ import {
 import { useState, useEffect } from 'react';
 
 // Importações originais
-import gestante2 from './assets/images/gestante2.png';
-import gestante3 from './assets/images/gestante3.png';
-import gestante4 from './assets/images/gestante4.png';
-import gestante5 from './assets/images/gestante5.png';
 import gestante6 from './assets/images/gestante6.jpeg';
 import gestante7 from './assets/images/gestante7.jpeg';
 import gestante8 from './assets/images/gestante8.jpeg';
@@ -43,11 +39,6 @@ import gestante20 from './assets/images/gestante20.jpeg';
 import gestante21 from './assets/images/gestante21.jpeg';
 import gestante22 from './assets/images/gestante22.jpeg';
 
-import new1 from './assets/images/new1B.png';
-import new2 from './assets/images/new2B.png';
-import new3 from './assets/images/new3B.png';
-import new4 from './assets/images/newB4.png';
-import new5 from './assets/images/new5B.png';
 import new6 from './assets/images/new6.jpeg';
 import new7 from './assets/images/new7.jpeg';
 import new8 from './assets/images/new8.jpeg';
@@ -81,11 +72,6 @@ import cake4 from './assets/images/cake4.jpeg';
 import cake5 from './assets/images/cake5.jpeg';
 import cake6 from './assets/images/cake6.jpeg';
 
-import eventos1 from './assets/images/eventos1.png'; 
-import eventos2 from './assets/images/eventos2.png';
-import eventos3 from './assets/images/eventos3.png';
-import eventos4 from './assets/images/eventos4.png';
-import eventos5 from './assets/images/eventos5.png';
 import eventos6 from './assets/images/eventos6.jpeg';
 import eventos7 from './assets/images/eventos7.jpeg';
 import eventos8 from './assets/images/eventos8.jpeg';
@@ -141,10 +127,6 @@ export default function App() {
       ],
       destaque: fotoFernanda,
       images: [
-        gestante2,
-        gestante3,
-        gestante4,
-        gestante5,
         gestante6,
         gestante7,
         gestante8,
@@ -250,11 +232,6 @@ export default function App() {
         { name: "3 - O Essencial", details: ["10 fotos digitais", "Fotos enroladinho e no puff", "Acessórios inclusos", "Observação: Não inclui fotos com pais"] }
       ],
       images: [
-        new1,
-        new2,
-        new3,
-        new4,
-        new5,
         new6,
         new7,
         new8,
@@ -394,11 +371,6 @@ export default function App() {
         { q: "Como funciona o pagamento?", a: "O valor da proposta deverá ser quitado até 1 dia antes do evento." }
       ],
       images: [
-        eventos1,
-        eventos2,
-        eventos3,
-        eventos4,
-        eventos5,
         eventos6,
         eventos7,
         eventos8,
