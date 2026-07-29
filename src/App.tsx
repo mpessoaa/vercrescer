@@ -460,7 +460,7 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen selection:bg-emerald-100 selection:text-emerald-900 bg-[#f9fbf9] text-stone-900 leading-relaxed font-sans overflow-x-hidden w-full">
+    <div className="min-h-screen selection:bg-emerald-100 selection:text-emerald-900 bg-[#f9fbf9] text-stone-900 leading-relaxed font-sans overflow-x-hidden">
       <div className="fixed inset-0 overflow-hidden pointer-events-none -z-10">
         <div className="absolute top-[-10%] left-[-5%] w-[50%] h-[50%] bg-emerald-100/30 rounded-full blur-[120px]" />
         <div className="absolute top-[30%] right-[-10%] w-[40%] h-[40%] bg-white rounded-full blur-[100px]" />
