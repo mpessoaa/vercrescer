@@ -598,19 +598,36 @@ export default function App() {
                     <div className="lg:sticky top-8 space-y-4 order-1 lg:order-2 w-full min-w-0">
                       <div className="relative rounded-[24px] sm:rounded-[40px] overflow-hidden bg-stone-100 aspect-[4/5] shadow-xl w-full">
                         <AnimatePresence mode="wait">
-                          <motion.img
-                            key={carouselIndex}
-                            src={activeService.images[carouselIndex]}
-                            referrerPolicy="no-referrer"
-                            loading="lazy"
-                            alt={`${activeService.title} - foto ${carouselIndex + 1}`}
-                            initial={{ opacity: 0, scale: 1.05 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            exit={{ opacity: 0 }}
-                            transition={{ duration: 0.4 }}
-                            className="w-full h-full object-cover cursor-pointer"
-                            onClick={() => setFotoAmpliada(activeService.images[carouselIndex])}
-                          />
+                          {activeService.images[carouselIndex].endsWith('.mp4') ? (
+                            <motion.video
+                              key={carouselIndex}
+                              src={activeService.images[carouselIndex]}
+                              initial={{ opacity: 0, scale: 1.05 }}
+                              animate={{ opacity: 1, scale: 1 }}
+                              exit={{ opacity: 0 }}
+                              transition={{ duration: 0.4 }}
+                              className="w-full h-full object-cover cursor-pointer"
+                              autoPlay
+                              muted
+                              loop
+                              playsInline
+                              onClick={() => setFotoAmpliada(activeService.images[carouselIndex])}
+                            />
+                          ) : (
+                            <motion.img
+                              key={carouselIndex}
+                              src={activeService.images[carouselIndex]}
+                              referrerPolicy="no-referrer"
+                              loading="lazy"
+                              alt={`${activeService.title} - imagem ${carouselIndex + 1}`}
+                              initial={{ opacity: 0, scale: 1.05 }}
+                              animate={{ opacity: 1, scale: 1 }}
+                              exit={{ opacity: 0 }}
+                              transition={{ duration: 0.4 }}
+                              className="w-full h-full object-cover cursor-pointer"
+                              onClick={() => setFotoAmpliada(activeService.images[carouselIndex])}
+                            />
+                          )}
                         </AnimatePresence>
 
                         {activeService.images.length > 1 && (
