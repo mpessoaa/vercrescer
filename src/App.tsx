@@ -729,16 +729,33 @@ export default function App() {
             >
               <X size={36} />
             </button>
-            <motion.img 
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              transition={{ type: "spring", damping: 25, stiffness: 200 }}
-              src={fotoAmpliada} 
-              alt="Foto Ampliada" 
-              className="max-w-full max-h-[85vh] sm:max-h-[90vh] object-contain rounded-xl shadow-2xl"
-              onClick={(e) => e.stopPropagation()} 
-            />
+            
+            {/* Aqui nós ensinamos o Lightbox a ver se é Vídeo ou Foto! */}
+            {fotoAmpliada.endsWith('.mp4') ? (
+              <motion.video 
+                initial={{ scale: 0.9, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.9, opacity: 0 }}
+                transition={{ type: "spring", damping: 25, stiffness: 200 }}
+                src={fotoAmpliada} 
+                controls
+                autoPlay
+                playsInline
+                className="max-w-full max-h-[85vh] sm:max-h-[90vh] object-contain rounded-xl shadow-2xl outline-none"
+                onClick={(e) => e.stopPropagation()} 
+              />
+            ) : (
+              <motion.img 
+                initial={{ scale: 0.9, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.9, opacity: 0 }}
+                transition={{ type: "spring", damping: 25, stiffness: 200 }}
+                src={fotoAmpliada} 
+                alt="Foto Ampliada" 
+                className="max-w-full max-h-[85vh] sm:max-h-[90vh] object-contain rounded-xl shadow-2xl"
+                onClick={(e) => e.stopPropagation()} 
+              />
+            )}
           </motion.div>
         )}
       </AnimatePresence>
