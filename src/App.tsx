@@ -679,10 +679,22 @@ export default function App() {
                               }`}
                             >
                               {media.endsWith('.mp4') ? (
-                                <video src={media} className="w-full h-full object-cover pointer-events-none" muted playsInline preload="none" />
-                              ) : (
-                                <img src={media} referrerPolicy="no-referrer" loading="lazy" className="w-full h-full object-cover pointer-events-none" alt="" />
-                              )}
+                              <video 
+                                src={`${media}#t=0.001`} 
+                                className="w-full h-full object-cover pointer-events-none" 
+                                muted 
+                                playsInline 
+                                preload="metadata" 
+                              />
+                            ) : (
+                              <img 
+                                src={media} 
+                                referrerPolicy="no-referrer" 
+                                loading="lazy" 
+                                className="w-full h-full object-cover pointer-events-none" 
+                                alt="" 
+                              />
+                            )}
                             </button>
                           ))}
                         </div>
