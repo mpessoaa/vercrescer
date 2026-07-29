@@ -64,6 +64,9 @@ import parto2 from './assets/images/parto2.png';
 import parto3 from './assets/images/parto3.png';
 import parto4 from './assets/images/parto4.png';
 import parto5 from './assets/images/parto5.png';
+// Adicione os vídeos aqui:
+import partoVideo1 from './assets/images/parto-video1.mp4';
+import partoVideo2 from './assets/images/parto-video2.mp4';
 
 import cake1 from './assets/images/cake1.jpeg';
 import cake2 from './assets/images/cake2.jpeg';
@@ -199,6 +202,8 @@ export default function App() {
       ],
       destaque: fotoTamires,
       images: [
+        partoVideo1, // Os vídeos podem ir no início ou no fim!
+        partoVideo2,
         parto1,
         parto2,
         parto3,
