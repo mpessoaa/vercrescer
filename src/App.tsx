@@ -202,7 +202,7 @@ export default function App() {
       ],
       destaque: fotoTamires,
       images: [
-        partoVideo1, // Os vídeos podem ir no início ou no fim!
+        partoVideo1,
         partoVideo2,
         parto1,
         parto2,
@@ -336,7 +336,7 @@ export default function App() {
       },
       about: {
         title: "Como funciona a nossa cobertura",
-        text: "Nossa cobertura é flexível, baseada no valor por hora contratada (mínimo de 2h). Todas as fotos passam por uma curadoria rigorosa e tratamento de luz, cor e corte. Para acalmar a curiosidade, enviamos prévias no mesmo dia! A entrega final acontece em até 10 dias úteis. Atendemos BC, Itajaí e Camboriú."
+        text: "Nossa cobertura é flexível, baseada no valor por hora contratada (mínimo de 2h). Todas as fotos passam por curadoria rigorosa e tratamento de luz, cor e corte. Para acalmar a curiosidade, enviamos prévias no mesmo dia! A entrega final acontece em até 10 dias úteis. Atendemos BC, Itajaí e Camboriú."
       },
       highlights: ["Espontâneo", "Documental", "Ágil"],
       packages: [
@@ -462,8 +462,8 @@ export default function App() {
   return (
     <div className="min-h-screen selection:bg-emerald-100 selection:text-emerald-900 bg-[#f9fbf9] text-stone-900 leading-relaxed font-sans overflow-x-hidden">
       <div className="fixed inset-0 overflow-hidden pointer-events-none -z-10">
-        <div className="absolute top-[-10%] left-[-5%] w-[50%] h-[50%] bg-emerald-100/30 rounded-full blur-[120px]" />
-        <div className="absolute top-[30%] right-[-10%] w-[40%] h-[40%] bg-white rounded-full blur-[100px]" />
+        <div className="absolute top-[-10%] left-[-5%] w-[80%] h-[80%] md:w-[50%] md:h-[50%] bg-emerald-100/30 rounded-full blur-[60px] md:blur-[120px]" />
+        <div className="absolute top-[30%] right-[-10%] w-[80%] h-[80%] md:w-[40%] md:h-[40%] bg-white rounded-full blur-[60px] md:blur-[100px]" />
       </div>
 
       {/* Detail Modal Overlay */}
@@ -679,7 +679,7 @@ export default function App() {
                               }`}
                             >
                               {media.endsWith('.mp4') ? (
-                                <video src={media} className="w-full h-full object-cover pointer-events-none" muted playsInline preload="metadata" />
+                                <video src={media} className="w-full h-full object-cover pointer-events-none" muted playsInline preload="none" />
                               ) : (
                                 <img src={media} referrerPolicy="no-referrer" loading="lazy" className="w-full h-full object-cover pointer-events-none" alt="" />
                               )}
@@ -691,9 +691,9 @@ export default function App() {
                   )}
                 </div>
 
-               {/* Chamada para Ação no Final do Modal */}
+                {/* Chamada para Ação no Final do Modal */}
                 <div className="p-6 sm:p-12 md:p-20 bg-emerald-950 text-white rounded-[24px] sm:rounded-[60px] text-center space-y-6 sm:space-y-8 relative overflow-hidden w-full">
-                   <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 blur-[100px] rounded-full" />
+                   <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 blur-[40px] md:blur-[100px] rounded-full" />
                    <h4 className="text-2xl sm:text-3xl md:text-5xl font-serif leading-tight break-words">Vamos eternizar<br/> esse momento?</h4>
                    <p className="opacity-60 max-w-md mx-auto font-light text-sm sm:text-base break-words">Cada clique é único e cheio de significado. Agende sua data hoje mesmo.</p>
                    <div className="pt-2 sm:pt-4 w-full">
@@ -730,7 +730,6 @@ export default function App() {
               <X size={36} />
             </button>
             
-            {/* Aqui nós ensinamos o Lightbox a ver se é Vídeo ou Foto! */}
             {fotoAmpliada.endsWith('.mp4') ? (
               <motion.video 
                 initial={{ scale: 0.9, opacity: 0 }}
@@ -859,8 +858,8 @@ export default function App() {
 
       <section id="contato" className="py-16 sm:py-24 md:py-32 px-4 sm:px-6 mb-10 sm:mb-20 w-full">
         <div className="max-w-5xl mx-auto bg-emerald-950 text-white rounded-[32px] sm:rounded-[48px] md:rounded-[60px] p-8 sm:p-14 md:p-24 text-center relative overflow-hidden shadow-2xl w-full">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 blur-[100px] -z-10 rounded-full" />
-          <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 blur-[100px] -z-10 rounded-full" />
+          <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 blur-[40px] md:blur-[100px] -z-10 rounded-full" />
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 blur-[40px] md:blur-[100px] -z-10 rounded-full" />
           <h2 className="text-3xl sm:text-5xl md:text-7xl font-serif mb-4 sm:mb-8 tracking-tighter break-words">Vamos conversar?</h2>
           <p className="max-w-xl mx-auto text-base sm:text-lg md:text-xl opacity-70 mb-8 sm:mb-12 font-light px-2 break-words">Todo grande momento merece ser registrado com perfeição. Clique abaixo e tire suas dúvidas.</p>
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 w-full">
