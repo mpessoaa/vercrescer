@@ -687,9 +687,11 @@ export default function App() {
                           ))}
                         </div>
                       )}
+                    </div>
+                  )}
                 </div>
 
-                {/* Chamada para Ação no Final do Modal */}
+               {/* Chamada para Ação no Final do Modal */}
                 <div className="p-6 sm:p-12 md:p-20 bg-emerald-950 text-white rounded-[24px] sm:rounded-[60px] text-center space-y-6 sm:space-y-8 relative overflow-hidden w-full">
                    <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 blur-[100px] rounded-full" />
                    <h4 className="text-2xl sm:text-3xl md:text-5xl font-serif leading-tight break-words">Vamos eternizar<br/> esse momento?</h4>
